@@ -8,123 +8,150 @@
     <link rel="stylesheet" href="normalize.css">
     <title>Document</title>
     <style>
-        #sec1 {
+        body > section {
             width: 50vw;
             height: 50vh;
-            background-color: red;
-            display: inline-block;
+            position: absolute;
         }
 
-        #sec2 {
-            width: 50vw;
-            height: 50vh;
+        body > section:nth-child(1) {
+            background-color: red;
+            top: 0;
+            left: 0;
+        }
+
+        body > section:nth-child(2) {
             background-color: green;
-            display: inline-block;
-            position: absolute;
             top: 0;
             right: 0;
-            margin: auto;
         }
 
-        #sec3 {
-            width: 50vw;
-            height: 50vh;
+        body > section:nth-child(3) {
             background-color: orange;
-            display: inline-block;
-            position: absolute;
             bottom: 0;
+            left: 0;
+        }
+
+        body > section:nth-child(4) {
+            background-color: deeppink;
+            bottom: 0;
+            right: 0;
+        }
+
+        body > section > div:last-child {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
             left: 0;
             margin: auto;
         }
 
-        #sec4 {
-            width: 50vw;
-            height: 50vh;
-            background-color: deeppink;
-            display: inline-block;
+        body > section > div:last-child > div {
+            width: 70px;
+            height: 70px;
+            background-color: red;
             position: absolute;
+            top: 0;
             bottom: 0;
             right: 0;
+            left: 0;
             margin: auto;
         }
 
-        #cir1 {
-            width: 15vw;
-            height: 30vh;
-            border-radius: 100%;
+        body > div {
+            width: 200px;
+            height: 200px;
             background-color: white;
             display: inline-block;
-            position: relative;
-            top: 70px;
-            left: 250px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
             margin: auto;
         }
 
-        #cir2 {
-            width: 15vw;
-            height: 30vh;
+        body > div > div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
             border-radius: 100%;
-            background-color: white;
             display: inline-block;
-            position: relative;
-            top: 70px;
-            left: 300px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
         }
 
-        #cir3 {
-            width: 15vw;
-            height: 30vh;
-            border-radius: 100%;
+        body > section > div:first-child {
+            width: 150px;
+            height: 150px;
             background-color: white;
+            border-radius: 100%;
             display: inline-block;
-            position: relative;
-            top: 80px;
-            left: 250px;
+            position: absolute;
         }
 
-        #cir4 {
-            width: 15vw;
-            height: 30vh;
-            border-radius: 100%;
-            background-color: white;
-            display: inline-block;
-            position: relative;
-            top: 80px;
-            left: 300px;
+        body > section:nth-of-type(1) > div:first-child {
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 10000px;
         }
 
-        #rec1{
-            width: 7vw;
-            height: 15vh;
-            background-color: mediumpurple;
-            display: inline-block;
-            position: relative;
-            top: 70px;
-            left: 80px;
+        body > section:nth-of-type(2) > div:first-child {
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 10000px;
+        }
 
+        body > section:nth-of-type(3) > div:first-child {
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 10000px;
+        }
+
+        body > section:nth-of-type(4) > div:first-child {
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 10000px;
         }
     </style>
 </head>
+
 <body>
-<section id="sec1">
-    <div id="cir1">
-        <div id="rec1"></div>
+<section>
+    <div></div>
+    <div>
+        <div></div>
     </div>
 </section>
-<section id="sec2">
-    <div id="cir2">
-        <div id="rec2"></div>
+<section>
+    <div></div>
+    <div>
+        <div></div>
     </div>
 </section>
-<section id="sec3">
-    <div id="cir3">
-        <div id="rec3"></div>
+<section>
+    <div></div>
+    <div>
+        <div></div>
     </div>
 </section>
-<section id="sec4">
-    <div id="cir4">
-        <div id="rec4"></div>
+<section>
+    <div></div>
+    <div>
+        <div></div>
     </div>
 </section>
+<div>
+    <div></div>
+</div>
 </body>
 </html>
