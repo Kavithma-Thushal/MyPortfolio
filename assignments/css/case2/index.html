@@ -1,46 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <title>Case2</title>
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-
-        html {
-            position: relative;
-            min-height: 100%;
-        }
-
         * {
-            font-family: Poppins;
+            font-family: Arial;
         }
 
         body > header {
-            /*box-shadow: 0px 0px 10px 0px black;*/
-            border: 2px solid black;
-            border-bottom: 3px solid black;
-            height: 71px;
+            height: 80px;
+            border: 2px solid grey;
+            border-bottom: 2px solid white;
         }
 
         body > header > img {
-            width: 200px;
-            position: relative;
-            top: 20px;
-            left: 10px;
+            height: 50px;
+            margin-top: 13px;
         }
 
         body > header > nav {
+            margin-top: 4px;
+            margin-right: 12px;
             position: absolute;
             top: 0;
-            right: 20px;
+            right: 0;
         }
 
         body > header > nav > ul > li {
             display: inline-block;
             padding: 10px;
-            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 700;
         }
 
         body > header > nav > ul > li:hover {
@@ -49,152 +43,268 @@
         }
 
         body > main {
-            border: 2px solid black;
+            position: relative;
+            border: 2px solid grey;
+            border-top: 2px solid white;
         }
 
-        body > main > aside {
+        body > main > nav {
             width: 300px;
-            background: rebeccapurple;
+            background-color: rebeccapurple;
             position: absolute;
-            top: 73px;
-            left: 0;
+            top: 0;
             bottom: 0;
-            margin: auto;
         }
 
-        body > main > aside > nav > ul {
-            display: inline-block;
-            margin: 0;
-            padding-left: 30px;
-            padding-top: 30px;
+        body > main > section {
+            border-top: 5px solid black;
+            margin-left: 300px;
+        }
+
+        body > main > section > p {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 10px;
+        }
+
+        body > main > nav > ul {
+            margin-top: 30px;
+        }
+
+        body > main > nav > ul > li {
+            display: block;
+            margin-top: 20px;
             color: white;
         }
 
-        body > main > aside > nav > ul > li {
-            display: block;
-            padding: 10px;
-            font-family: Poppins;
-        }
-
-        body > main > aside > nav > ul > li:hover {
+        body > main > nav > ul > li:hover {
             color: red;
             cursor: pointer;
         }
 
-        body > main > section {
-            position: relative;
-            left: 300px;
-            bottom: 100px;
-            width: calc(100% - 305px);
+        body > main > section > div {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 20px;
+            display: flex;
         }
 
-        body > main > section > section > img {
+        body > main > section > div > img {
             width: calc(100% / 3);
         }
 
-        body > main > section > section {
-            display: flex;
-            margin: 112px 15px 0px 10px;
-        }
-
-        body > main > section > section > img:first-child {
-            border: 2px solid saddlebrown;
-            border-right-color: green;
-            border-bottom-color: green;
-        }
-
-        body > main > section > section > img:nth-child(2) {
+        body > main > section > div > img:first-child {
             border: 2px solid green;
-            border-top-color: saddlebrown;
+            border-top: 2px solid saddlebrown;
+            border-left: 2px solid saddlebrown;
         }
 
-        body > main > section > section > img:nth-child(3) {
-            border: 2px solid saddlebrown;
-            border-left-color: green;
-            border-bottom-color: green;
+        body > main > section > div > img:nth-child(2) {
+            border: 2px solid green;
+            border-top: 2px solid saddlebrown;
         }
 
-        body > main > section > div {
-            margin-left: 10px;
+        body > main > section > div > img:nth-child(3) {
+            border: 2px solid green;
+            border-top: 2px solid saddlebrown;
+            border-right: 2px solid saddlebrown;
         }
 
-        footer {
-            position: absolute;
-            bottom: 0;
-            height: 40px;
-            width: 100%;
+        body > footer {
+            height: 50px;
             background-color: grey;
-            /*font*/
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border: 2px solid grey;
+        }
+
+        body > footer > p {
             color: white;
+            font-family: Arial;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 0;
+            padding-top: 14px;
         }
     </style>
 </head>
 
 <body>
 <header>
-    <img src="assets/img/ijse.png" alt="IJSE Logo">
+    <img src="assets/img/ijse.png">
     <nav>
         <ul>
             <li>Home</li>
             <li>Services</li>
-            <li>Contact</li>
+            <li>Contacts</li>
             <li>About Us</li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <aside>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Contacts</li>
-                <li>About Us</li>
-            </ul>
-        </nav>
-    </aside>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contacts</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
     <section>
-        <section>
-            <img src="assets/img/monkey.gif" alt="gif">
-            <img src="assets/img/monkey.gif" alt="gif">
-            <img src="assets/img/monkey.gif" alt="gif">
-        </section>
         <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut culpa cupiditate debitis
-                eius eos esse exercitationem expedita labore maiores nisi odit quae quasi rem, repudiandae suscipit
-                temporibus voluptatum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut culpa cupiditate debitis
-                eius eos esse exercitationem expedita labore maiores nisi odit quae quasi rem, repudiandae suscipit
-                temporibus voluptatum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut culpa cupiditate debitis
-                eius eos esse exercitationem expedita labore maiores nisi odit quae quasi rem, repudiandae suscipit
-                temporibus voluptatum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut culpa cupiditate debitis
-                eius eos esse exercitationem expedita labore maiores nisi odit quae quasi rem, repudiandae suscipit
-                temporibus voluptatum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut culpa cupiditate debitis
-                eius eos esse exercitationem expedita labore maiores nisi odit quae quasi rem, repudiandae suscipit
-                temporibus voluptatum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut culpa cupiditate debitis
-                eius eos esse exercitationem expedita labore maiores nisi odit quae quasi rem, repudiandae suscipit
-                temporibus voluptatum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut culpa cupiditate debitis
-                eius eos esse exercitationem expedita labore maiores nisi odit quae quasi rem, repudiandae suscipit
-                temporibus voluptatum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut culpa cupiditate debitis
-                eius eos esse exercitationem expedita labore maiores nisi odit quae quasi rem, repudiandae suscipit
-                temporibus voluptatum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut culpa cupiditate debitis
-                eius eos esse exercitationem expedita labore maiores nisi odit quae quasi rem, repudiandae suscipit
-                temporibus voluptatum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aut culpa cupiditate debitis
-                eius eos esse exercitationem expedita labore maiores nisi odit quae quasi rem, repudiandae suscipit
-                temporibus voluptatum.</p>
+            <img src="assets/img/monkey.gif">
+            <img src="assets/img/monkey.gif">
+            <img src="assets/img/monkey.gif">
         </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dolorem laudantium
+            libero natus numquam odit
+            similique ullam. Culpa deleniti dicta, dignissimos doloribus, eveniet nemo nesciunt omnis possimus
+            praesentium quam sit.</p>
     </section>
 </main>
 
