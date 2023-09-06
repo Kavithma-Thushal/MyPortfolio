@@ -7,43 +7,113 @@
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <title>Case5</title>
     <style>
-        body {
-            margin-top: 120px;
-            margin-left: 220px;
+        body > section {
+            width: 1200px;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 9px;
         }
 
-        body > div {
-            display: flex;
-        }
-
-        body > div > img {
-            width: calc(100% / 5);
-            padding: 7px;
+        section > div {
             box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        section > div:first-child {
+            background: url("assets/images/1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(2) {
+            background: url("assets/images/2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(3) {
+            background: url("assets/images/3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(4) {
+            background: url("assets/images/4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(5) {
+            background: url("assets/images/1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(6) {
+            background: url("assets/images/2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(7) {
+            background: url("assets/images/3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(8) {
+            background: url("assets/images/4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(9) {
+            background: url("assets/images/1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(10) {
+            background: url("assets/images/2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(11) {
+            background: url("assets/images/3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(12) {
+            background: url("assets/images/4.jpg");
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
 
 <body>
-<div>
-    <img src="assets/images/1.jpg">
-    <img src="assets/images/2.jpg">
-    <img src="assets/images/3.jpg">
-    <img src="assets/images/4.jpg">
-</div>
-
-<div>
-    <img src="assets/images/1.jpg">
-    <img src="assets/images/2.jpg">
-    <img src="assets/images/3.jpg">
-    <img src="assets/images/4.jpg">
-</div>
-
-<div>
-    <img src="assets/images/1.jpg">
-    <img src="assets/images/2.jpg">
-    <img src="assets/images/3.jpg">
-    <img src="assets/images/4.jpg">
-</div>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
 </body>
 </html>
