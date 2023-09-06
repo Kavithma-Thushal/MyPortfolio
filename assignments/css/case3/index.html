@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Case3</title>
+    <style>
+        * {
+            font-family: Arial;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        body > section {
+            position: relative;
+            height: 100vh;
+        }
+
+        body > div:first-child {
+            width: 300px;
+            height: 300px;
+            border: 10px solid grey;
+            border-radius: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > div:first-child > div {
+            width: 280px;
+            height: 280px;
+            border: 10px solid red;
+            border-radius: 100%;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > section:nth-child(2) > div {
+            width: 280px;
+            height: 280px;
+            background-color: mediumpurple;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > section:nth-child(3) > div {
+            width: 280px;
+            height: 280px;
+            background-color: cornflowerblue;
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > section:nth-child(4) > div {
+            width: 280px;
+            height: 280px;
+            background-color: indianred;
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > section:nth-child(2) > div > p {
+            margin-top: 120px;
+        }
+
+        body > section:nth-child(3) > div > p {
+            margin-top: 120px;
+        }
+
+        body > section:nth-child(4) > div > p {
+            margin-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <div></div>
+</div>
+
+<section>
+    <div>
+        <p>Hello</p>
+    </div>
+</section>
+
+<section>
+    <div>
+        <p>Welcome To</p>
+    </div>
+</section>
+
+<section>
+    <div>
+        <p>Institute of Software Engineering</p>
+    </div>
+</section>
+</body>
+</html>
