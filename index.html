@@ -24,241 +24,274 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="robots" content="index,follow">
 
-    <style></style>
     <script></script>
+    <style>
+        * {
+            color: white;
+            font-family: Arial;
+            font-size: 30px;
+        }
+
+        body > section {
+            height: 100vh;
+            position: relative;
+            background-image: url("assets/images/Background.jpg");
+            background-size: cover;
+        }
+
+        body > section:first-child > nav:first-child {
+            position: absolute;
+            right: 0;
+            margin-right: 15px;
+        }
+
+        body > section:first-child > nav:first-child > ul > li {
+            display: inline-block;
+            padding: 12px;
+
+        }
+
+        body > section:first-child > nav:first-child > ul > li:hover {
+            color: dodgerblue;
+            cursor: pointer;
+        }
+
+        body>section:first-child>div:nth-child(7){
+            width: 850px;
+            height: 750px;
+            background-color: dodgerblue;
+            border-radius: 100% 0 0 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        body>section:first-child>div:nth-child(7)>img{
+            width: 600px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
 </head>
 
 <body>
-<header>
-    <section>
-        <nav>
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Education">Education</a>
-            <a href="#Skills">Skills</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Assignments">Assignments</a>
-            <a href="#Certificates">Certificates</a>
-            <a href="#Services">Services</a>
-            <a href="#Contact">Contact</a>
-        </nav>
-    </section>
-</header>
-
-<main>
-    <section id="Home">
-        <h3 style="color: blue">Hello</h3>
-        <h1>I am Kavithma Thushal</h1>
-        <h3>FullStack Developer</h3>
-        <div>
-            <a href="#">Hire Me</a>
-        </div>
-        <img src="assets/images/KavithmaThushal.png" width="200" alt="Kavithma Thushal">
-        <nav>
-            <a href="https://github.com/Thushal2001" target="_blank"><img src="assets/icons/github.png" width="40"
-                                                                          alt="github"></a>
-            <a href="https://www.linkedin.com/in/kavithma-thushal-3b8a92260/" target="_blank"><img
-                    src="assets/icons/linkedin.png" width="40" alt="linkedin"></a>
-            <a href="https://stackoverflow.com/users/21296342/kavithma-thushal?tab=profile" target="_blank"><img
-                    src="assets/icons/stackoverflow.png" width="40" alt="stackoverflow"></a>
-            <a href="https://twitter.com/Thushal9007" target="_blank"><img src="assets/icons/twitter.png" width="50"
-                                                                           alt="twitter"></a>
-            <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><img src="assets/icons/email2.png"
-                                                                                          width="40" alt="email"></a>
-            <a href="https://www.instagram.com/kavithma_thushal/" target="_blank"><img src="assets/icons/instergram.png"
-                                                                                       width="40" alt="instergram"></a>
-            <a href="https://web.facebook.com/profile.php?id=100078869062566" target="_blank"><img
-                    src="assets/icons/facebook.png" width="40" alt="facebook"></a>
-        </nav>
-    </section>
-    <br>
-    <section id="About">
-        <h1>About Me</h1>
-        <article><p> Hello there! I am currently pursuing my studies in software engineering at the Institute of Java &
-            Software Engineering (IJSE). I will share a brief overview of my journey and passion for software
-            engineering.
-
-            Highly motivated and enthusiastic student studying Software Engineering at IJSE. Eager to learn new
-            technologies and always willing to innovate new things that can enhance existing technology. An easy-going
-            person with a positive attitude and the ability to work in good teams.
-
-            Feel free to explore my portfolio further for more information and examples of my work.</p></article>
+<section>
+    <nav>
         <ul>
-            <li><span style="color: rebeccapurple">Full Name :</span> Kavithma Thushal</li>
-            <li><span style="color: rebeccapurple">Age :</span> 22</li>
-            <li><span style="color: rebeccapurple">Birthday :</span> 13/02/2001</li>
-            <li><span style="color: rebeccapurple">City :</span> Galle</li>
-            <li><span style="color: rebeccapurple">Nationality :</span> Sri Lankan</li>
-            <li><span style="color: rebeccapurple">Language :</span> Sinhala</li>
-            <li><span style="color: rebeccapurple">Email :</span> kavithmsthushal9007@gmail.com</li>
-            <li><span style="color: rebeccapurple">Phone :</span> 077-4519007 / 078-3686117</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Education</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Assignments</li>
+            <li>Certificates</li>
+            <li>Services</li>
+            <li>Contact</li>
         </ul>
-        <a href="#">Download CV</a>
+    </nav>
+    <h3>Hello</h3>
+    <h1>I am Kavithma Thushal</h1>
+    <h3>FullStack Developer</h3>
+    <div>
         <a href="#">Hire Me</a>
-    </section>
-    <br>
-    <section id="Education">
-        <h1>Education</h1>
-        <div>
-            <span>2007-2017</span><br>
-            <b>ordinary Level - </b><span>Vidyaloka College Galle</span>
-            <p>I did my primary and secondary education well in here</p>
-        </div>
-        <div>
-            <span>2018-2020</span><br>
-            <b>Advanced Level - </b><span>Vidyaloka College Galle</span>
-            <p>I did my advanced level education well in here</p>
-        </div>
-        <div>
-            <span>2022-2024</span><br>
-            <b>HND Level - </b><span>Institute of Software Engineering</span>
-            <p>After completing my high school education</p>
-        </div>
-    </section>
-    <br>
-    <section id="Skills">
-        <h1>My Skills</h1>
-        <section>
-            <h3>Languages</h3>
-            <div><img src="assets/icons/java.png" width="60" alt="java"></div>
-            <div><img src="assets/icons/javascript.png" width="60" alt="javascript"></div>
-            <div><img src="assets/icons/html5.png" width="60" alt="html5"></div>
-            <div><img src="assets/icons/css.png" width="60" alt="css"></div>
-            <div><img src="assets/icons/react.png" width="60" alt="react"></div>
-            <div><img src="assets/icons/nodejs.png" width="60" alt="nodejs"></div>
-            <div><img src="assets/icons/mariadb.png" width="60" alt="mariadb"></div>
-            <div><img src="assets/icons/postman.png" width="60" alt="postman"></div>
-            <div><img src="assets/icons/bootstrap.png" width="60" alt="bootstrap"></div>
-            <div><img src="assets/icons/mysql.png" width="60" alt="mysql"></div>
-            <div><img src="assets/icons/mongodb.png" width="60" alt="mongodb"></div>
-        </section>
-        <section>
-            <h3>Tools</h3>
-            <div><img src="assets/icons/intellij.png" width="60" alt="intellij"></div>
-            <div><img src="assets/icons/visualstudio.png" width="60" alt="visualstudio"></div>
-            <div><img src="assets/icons/netbeans.png" width="60" alt="netbeans"></div>
-            <div><img src="assets/icons/figma.png" width="60" alt="figma"></div>
-            <div><img src="assets/icons/scenebuilder.png" width="60" alt="scenebuilder"></div>
-            <div><img src="assets/icons/github.png" width="60" alt="github"></div>
-            <div><img src="assets/icons/git.png" width="60" alt="git"></div>
-            <div><img src="assets/icons/photoshop.png" width="60" alt="photoshop"></div>
-        </section>
-    </section>
-    <br>
-    <section id="Projects">
-        <h1>Projects</h1>
-        <div>
-            <img src="assets/images/project.jpg" width="120" alt="Computershop Management System">
-            <h3>Computershop Management System</h3>
-            <a href="https://github.com/Thushal2001/Bashicomputershop-1st_Sem_Final" target="_blank">More Details</a>
-        </div>
-        <div>
-            <img src="assets/icons/Calculator.png" width="120" alt="Simple Calculator">
-            <h3>Simple Calculator</h3>
-            <a href="https://github.com/Thushal2001/Simple-Calculator" target="_blank">More Details</a>
-        </div>
-        <div>
-            <img src="assets/icons/chatApplication.png" width="120" alt="Chat Application">
-            <h3>Chat Application</h3>
-            <a href="https://github.com/Thushal2001/ChatApplication" target="_blank">More Details</a>
-        </div>
-        <a href="https://github.com/Thushal2001?tab=repositories" target="_blank">See More ...</a>
-    </section>
-    <br>
-    <section id="Assignments">
-        <h1>Assignments</h1>
-        <div>
-            <img src="assets/icons/assignment.png" width="120" alt="Assignment 1">
-            <h3>Assignment 1</h3>
-            <a href="#">More Details</a>
-        </div>
-        <div>
-            <img src="assets/icons/assignment.png" width="120" alt="Assignment 2">
-            <h3>Assignment 2</h3>
-            <a href="#">More Details</a>
-        </div>
-        <div>
-            <img src="assets/icons/assignment.png" width="120" alt="Assignment 3">
-            <h3>Assignment 3</h3>
-            <a href="#">More Details</a>
-        </div>
-        <a href="#">See More ...</a>
-    </section>
-    <br>
-    <section id="Certificates">
-        <h1>Certificates</h1>
-        <div>
-            <img src="assets/icons/certificate.png" width="120" alt="certificate">
-            <a href="#">More Details</a>
-        </div>
-        <div>
-            <img src="assets/icons/certificate.png" width="120" alt="certificate">
-            <a href="#">More Details</a>
-        </div>
-        <div>
-            <img src="assets/icons/certificate.png" width="120" alt="certificate">
-            <a href="#">More Details</a>
-        </div>
-    </section>
-    <br>
-    <section id="Services">
-        <h1>Services</h1>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-    <br>
-    <section id="Contact">
-        <h1>Contact Us</h1>
-        <address>
-            <div>
-                <img src="assets/icons/user.png" width="50" alt="user">
-                <h4>M.G.D. Kavithma Thushal</h4>
-            </div>
-            <div>
-                <img src="assets/icons/email.png" width="50" alt="email.png" about="email">
-                <h4>kavithmsthushal9007@gmail.com</h4>
-            </div>
-            <div>
-                <img src="assets/icons/call.png" width="50" alt="call">
-                <h4>077-4519007 / 078-3686117</h4>
-            </div>
-            <div>
-                <img src="assets/icons/location.png" width="35" alt="location">
-                <h4>Watareka, Galle</h4>
-            </div>
-        </address>
-        <nav>
-            <a href="https://github.com/Thushal2001" target="_blank"><img src="assets/icons/github.png" width="40"
-                                                                          alt="github"></a>
-            <a href="https://www.linkedin.com/in/kavithma-thushal-3b8a92260/" target="_blank"><img
-                    src="assets/icons/linkedin.png" width="40" alt="linkedin"></a>
-            <a href="https://stackoverflow.com/users/21296342/kavithma-thushal?tab=profile" target="_blank"><img
-                    src="assets/icons/stackoverflow.png" width="40" alt="stackoverflow"></a>
-            <a href="https://twitter.com/Thushal9007" target="_blank"><img src="assets/icons/twitter.png" width="50"
-                                                                           alt="twitter"></a>
-            <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><img src="assets/icons/email2.png"
-                                                                                          width="40" alt="email"></a>
-        </nav>
-        <br>
-        <form>
-            <fieldset>
-                <input type="text" name="name" placeholder="Name :" required><br>
-                <br>
-                <input type="email" name="email" placeholder="Email :" required><br>
-                <br>
-                <input type="tel" name="mobile" placeholder="Mobile No :" required><br>
-                <br>
-                <textarea rows="5">Message:</textarea><br>
-                <br>
-                <button type="submit">Send Details</button>
-            </fieldset>
-        </form>
-    </section>
-</main>
+    </div>
+    <nav>
+        <a href="https://github.com/Thushal2001" target="_blank"><img src="assets/icons/github.png" width="40"
+                                                                      alt="github"></a>
+        <a href="https://www.linkedin.com/in/kavithma-thushal-3b8a92260/" target="_blank"><img
+                src="assets/icons/linkedin.png" width="40" alt="linkedin"></a>
+        <a href="https://stackoverflow.com/users/21296342/kavithma-thushal?tab=profile" target="_blank"><img
+                src="assets/icons/stackoverflow.png" width="40" alt="stackoverflow"></a>
+        <a href="https://twitter.com/Thushal9007" target="_blank"><img src="assets/icons/twitter.png" width="50"
+                                                                       alt="twitter"></a>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><img src="assets/icons/email2.png"
+                                                                                      width="40" alt="email"></a>
+        <a href="https://www.instagram.com/kavithma_thushal/" target="_blank"><img src="assets/icons/instergram.png"
+                                                                                   width="40" alt="instergram"></a>
+        <a href="https://web.facebook.com/profile.php?id=100078869062566" target="_blank"><img
+                src="assets/icons/facebook.png" width="40" alt="facebook"></a>
+    </nav>
+    <div>
+        <img src="assets/images/KavithmaThushal.png" width="200" alt="Kavithma Thushal">
+    </div>
+</section>
+<section>
+    <h1>About Me</h1>
+    <article><p> Hello there! I am currently pursuing my studies in software engineering at the Institute of Java &
+        Software Engineering (IJSE). I will share a brief overview of my journey and passion for software
+        engineering.
 
-<footer>
-    <h4>© 2023 All Right Reserved Designed By Kavithma Thushal</h4>
-</footer>
+        Highly motivated and enthusiastic student studying Software Engineering at IJSE. Eager to learn new
+        technologies and always willing to innovate new things that can enhance existing technology. An easy-going
+        person with a positive attitude and the ability to work in good teams.
+
+        Feel free to explore my portfolio further for more information and examples of my work.</p></article>
+    <ul>
+        <li><span style="color: rebeccapurple">Full Name :</span> Kavithma Thushal</li>
+        <li><span style="color: rebeccapurple">Age :</span> 22</li>
+        <li><span style="color: rebeccapurple">Birthday :</span> 13/02/2001</li>
+        <li><span style="color: rebeccapurple">City :</span> Galle</li>
+        <li><span style="color: rebeccapurple">Nationality :</span> Sri Lankan</li>
+        <li><span style="color: rebeccapurple">Language :</span> Sinhala</li>
+        <li><span style="color: rebeccapurple">Email :</span> kavithmsthushal9007@gmail.com</li>
+        <li><span style="color: rebeccapurple">Phone :</span> 077-4519007 / 078-3686117</li>
+    </ul>
+    <a href="#">Download CV</a>
+    <a href="#">Hire Me</a>
+</section>
+<section>
+    <h1>Education</h1>
+    <div>
+        <span>2007-2017</span><br>
+        <b>ordinary Level - </b><span>Vidyaloka College Galle</span>
+        <p>I did my primary and secondary education well in here</p>
+    </div>
+    <div>
+        <span>2018-2020</span><br>
+        <b>Advanced Level - </b><span>Vidyaloka College Galle</span>
+        <p>I did my advanced level education well in here</p>
+    </div>
+    <div>
+        <span>2022-2024</span><br>
+        <b>HND Level - </b><span>Institute of Software Engineering</span>
+        <p>After completing my high school education</p>
+    </div>
+</section>
+<section>
+    <h1>My Skills</h1>
+    <section>
+        <h3>Languages</h3>
+        <div><img src="assets/icons/java.png" width="60" alt="java"></div>
+        <div><img src="assets/icons/javascript.png" width="60" alt="javascript"></div>
+        <div><img src="assets/icons/html5.png" width="60" alt="html5"></div>
+        <div><img src="assets/icons/css.png" width="60" alt="css"></div>
+        <div><img src="assets/icons/react.png" width="60" alt="react"></div>
+        <div><img src="assets/icons/nodejs.png" width="60" alt="nodejs"></div>
+        <div><img src="assets/icons/mariadb.png" width="60" alt="mariadb"></div>
+        <div><img src="assets/icons/postman.png" width="60" alt="postman"></div>
+        <div><img src="assets/icons/bootstrap.png" width="60" alt="bootstrap"></div>
+        <div><img src="assets/icons/mysql.png" width="60" alt="mysql"></div>
+        <div><img src="assets/icons/mongodb.png" width="60" alt="mongodb"></div>
+    </section>
+    <section>
+        <h3>Tools</h3>
+        <div><img src="assets/icons/intellij.png" width="60" alt="intellij"></div>
+        <div><img src="assets/icons/visualstudio.png" width="60" alt="visualstudio"></div>
+        <div><img src="assets/icons/netbeans.png" width="60" alt="netbeans"></div>
+        <div><img src="assets/icons/figma.png" width="60" alt="figma"></div>
+        <div><img src="assets/icons/scenebuilder.png" width="60" alt="scenebuilder"></div>
+        <div><img src="assets/icons/github.png" width="60" alt="github"></div>
+        <div><img src="assets/icons/git.png" width="60" alt="git"></div>
+        <div><img src="assets/icons/photoshop.png" width="60" alt="photoshop"></div>
+    </section>
+</section>
+<section>
+    <h1>Projects</h1>
+    <div>
+        <img src="assets/images/project.jpg" width="120" alt="Computershop Management System">
+        <h3>Computershop Management System</h3>
+        <a href="https://github.com/Thushal2001/Bashicomputershop-1st_Sem_Final" target="_blank">More Details</a>
+    </div>
+    <div>
+        <img src="assets/icons/Calculator.png" width="120" alt="Simple Calculator">
+        <h3>Simple Calculator</h3>
+        <a href="https://github.com/Thushal2001/Simple-Calculator" target="_blank">More Details</a>
+    </div>
+    <div>
+        <img src="assets/icons/chatApplication.png" width="120" alt="Chat Application">
+        <h3>Chat Application</h3>
+        <a href="https://github.com/Thushal2001/ChatApplication" target="_blank">More Details</a>
+    </div>
+    <a href="https://github.com/Thushal2001?tab=repositories" target="_blank">See More ...</a>
+</section>
+<section>
+    <h1>Assignments</h1>
+    <div>
+        <img src="assets/icons/assignment.png" width="120" alt="Assignment 1">
+        <h3>Assignment 1</h3>
+        <a href="#">More Details</a>
+    </div>
+    <div>
+        <img src="assets/icons/assignment.png" width="120" alt="Assignment 2">
+        <h3>Assignment 2</h3>
+        <a href="#">More Details</a>
+    </div>
+    <div>
+        <img src="assets/icons/assignment.png" width="120" alt="Assignment 3">
+        <h3>Assignment 3</h3>
+        <a href="#">More Details</a>
+    </div>
+    <a href="#">See More ...</a>
+</section>
+<section>
+    <h1>Certificates</h1>
+    <div>
+        <img src="assets/icons/certificate.png" width="120" alt="certificate">
+        <a href="#">More Details</a>
+    </div>
+    <div>
+        <img src="assets/icons/certificate.png" width="120" alt="certificate">
+        <a href="#">More Details</a>
+    </div>
+    <div>
+        <img src="assets/icons/certificate.png" width="120" alt="certificate">
+        <a href="#">More Details</a>
+    </div>
+</section>
+<section>
+    <h1>Services</h1>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+<section>
+    <h1>Contact Us</h1>
+    <address>
+        <div>
+            <img src="assets/icons/user.png" width="50" alt="user">
+            <h4>M.G.D. Kavithma Thushal</h4>
+        </div>
+        <div>
+            <img src="assets/icons/email.png" width="50" alt="email.png" about="email">
+            <h4>kavithmsthushal9007@gmail.com</h4>
+        </div>
+        <div>
+            <img src="assets/icons/call.png" width="50" alt="call">
+            <h4>077-4519007 / 078-3686117</h4>
+        </div>
+        <div>
+            <img src="assets/icons/location.png" width="35" alt="location">
+            <h4>Watareka, Galle</h4>
+        </div>
+    </address>
+    <nav>
+        <a href="https://github.com/Thushal2001" target="_blank"><img src="assets/icons/github.png" width="40"
+                                                                      alt="github"></a>
+        <a href="https://www.linkedin.com/in/kavithma-thushal-3b8a92260/" target="_blank"><img
+                src="assets/icons/linkedin.png" width="40" alt="linkedin"></a>
+        <a href="https://stackoverflow.com/users/21296342/kavithma-thushal?tab=profile" target="_blank"><img
+                src="assets/icons/stackoverflow.png" width="40" alt="stackoverflow"></a>
+        <a href="https://twitter.com/Thushal9007" target="_blank"><img src="assets/icons/twitter.png" width="50"
+                                                                       alt="twitter"></a>
+        <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><img src="assets/icons/email2.png"
+                                                                                      width="40" alt="email"></a>
+    </nav>
+    <br>
+    <form>
+        <fieldset>
+            <input type="text" name="name" placeholder="Name :" required><br>
+            <br>
+            <input type="email" name="email" placeholder="Email :" required><br>
+            <br>
+            <input type="tel" name="mobile" placeholder="Mobile No :" required><br>
+            <br>
+            <textarea rows="5">Message:</textarea><br>
+            <br>
+            <button type="submit">Send Details</button>
+        </fieldset>
+    </form>
+    <p>© 2023 All Right Reserved Designed By Kavithma Thushal</p>
+</section>
 </body>
 </html>
