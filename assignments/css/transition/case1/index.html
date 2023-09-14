@@ -4,14 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="fontawesome/normalize.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
     <title>Case1</title>
     <style>
+        * {
+            color: white;
+        }
 
+        body > section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        body > section > div {
+            width: 250px;
+            height: 50px;
+            background-color: purple;
+            margin-top: 100px;
+            transition: all 2s;
+            margin-left: -200px;
+            box-shadow: 1px 1px 20px 1px black;
+        }
+
+        body > section > div:hover {
+            transition: all 2s;
+            margin-left: 0;
+            cursor: pointer;
+        }
+
+        body > section > div > p:first-child {
+            margin-top: 0;
+            margin-left: 10px;
+            padding: 8px;
+            font-size: 30px;
+            font-family: Arial;
+        }
+
+        body > section > div > p:nth-child(2) {
+            margin-top: -72px;
+            margin-left: 210px;
+            font-size: 30px;
+        }
     </style>
 </head>
 
 <body>
-
+<section>
+    <div>
+        <p>Customers</p>
+        <p><i class="fa-solid fa-user"></i></p>
+    </div>
+    <div>
+        <p>Items</p>
+        <p><i class="fa-solid fa-sitemap"></i></p>
+    </div>
+    <div>
+        <p>Orders</p>
+        <p><i class="fa-solid fa-anchor"></i></p>
+    </div>
+    <div>
+        <p>Details</p>
+        <p><i class="fa-solid fa-angle-down"></i></p>
+    </div>
+</section>
 </body>
 </html>
