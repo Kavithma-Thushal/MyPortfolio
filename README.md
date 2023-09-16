@@ -15,7 +15,7 @@ This is My Personal Web Project
 🔗 <a href="http://kwith.epizy.com/" target="_blank">Infinity Free</a></br>
 🔗 <a href="https://www.gloomaps.com/icbeqVdv9a" target="_blank">Site Map</a></br>
 🔗 <a href="https://wireframe.cc/29u3zM" target="_blank">Wire Frame</a></br>
-🔗 <a href="https://www.figma.com/file/zQvuM9paREM8ZbCZmDoMHY/My-Mockup?type=design&node-id=0-1&mode=design&t=0N9NmvZ3YbNvvS4K-0" target="_blank">
+🔗 <a href="https://www.figma.com/file/mmHVJt25CXdinNz6f48ZB5/My-Mockup?type=design&node-id=0-1&mode=design&t=geCjyFwJrOsqVFJD-0" target="_blank">
 Mock Up</a>
 
 ### Version
