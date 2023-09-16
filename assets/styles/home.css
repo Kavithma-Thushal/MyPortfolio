@@ -12,7 +12,8 @@ body > section:first-child > nav:first-child > ul > li {
 body > section:first-child > nav:first-child > ul > li:hover {
     height: 15px;
     background-color: dodgerblue;
-    border-radius: 20px;
+    padding-top: 5px;
+    border-radius: 5px;
     color: black;
     font-weight: bold;
     cursor: pointer;
