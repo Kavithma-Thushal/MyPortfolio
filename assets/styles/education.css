@@ -1,0 +1,17 @@
+body > section:nth-child(3) > section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body > section:nth-child(3) > section > div {
+    margin-top: 120px;
+    height: 100px;
+}
+
+body > section:nth-child(3) > section > div > span:first-child {
+    background-color: dodgerblue;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
