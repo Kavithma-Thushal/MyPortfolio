@@ -8,7 +8,7 @@ body > section:nth-child(3) > section > div {
     height: 100px;
 }
 
-body > section:nth-child(3) > section > div>p {
+body > section:nth-child(3) > section > div > p {
     width: 390px;
 }
 
