@@ -8,6 +8,10 @@ body > section:nth-child(3) > section > div {
     height: 100px;
 }
 
+body > section:nth-child(3) > section > div>p {
+    width: 390px;
+}
+
 body > section:nth-child(3) > section > div > span:first-child {
     background-color: dodgerblue;
     color: black;
