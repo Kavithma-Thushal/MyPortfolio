@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Case4</title>
+    <style>
+
+        body > section {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            border: 15px solid grey;
+            border-top: 15px solid red;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > section > div:first-child {
+            width: 165px;
+            height: 15px;
+            background: red;
+            position: absolute;
+            top: 95px;
+            right: 7px;
+            rotate: 135deg;
+        }
+
+        body > section > div:last-child {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: red;
+            position: absolute;
+            top: 25px;
+            right: 15px;
+        }
+
+        body > section:hover {
+            cursor: pointer;
+            transition: 2s all;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+<section>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

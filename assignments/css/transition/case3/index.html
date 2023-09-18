@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <title>Case3</title>
+    <style>
+        body {
+            background-color: dodgerblue;
+        }
+
+        body > section {
+            width: 600px;
+            height: 300px;
+            background-image: url("assets/images/car.jpg");
+            background-size: cover;
+            background-position: center;
+            border: 2px solid white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            box-shadow: 10px -10px 20px 0px;
+        }
+
+        body > section > div {
+            width: 100%;
+            height: 0;
+            position: absolute;
+            bottom: 0;
+            background-color: black;
+            transition: height 0.5s;
+            opacity: 0.3;
+        }
+
+        body > section:hover > div {
+            height: 100%;
+        }
+
+        body > section > img {
+            height: 0;
+            position: absolute;
+            top: 0%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transition: top 0.5s ease;
+        }
+
+        body > section:hover > img {
+            height: 20%;
+            top: 20vh;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+<section>
+    <div></div>
+    <img src="assets/images/delete.png">
+</section>
+</body>
+</html>
