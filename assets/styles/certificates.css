@@ -4,6 +4,15 @@ body > section:nth-child(7) > section {
     margin-top: 150px;
 }
 
+body > section:nth-child(7) > section > div > div {
+    width: 145px;
+    height: 30px;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    position: absolute;
+    left: 1105px;
+}
+
 body > section:nth-child(7) > section > div:first-child > div {
     width: 145px;
     height: 30px;
@@ -20,15 +29,6 @@ body > section:nth-child(7) > section > div:nth-child(2) > div {
     border-radius: 20px;
     position: absolute;
     left: 690px;
-}
-
-body > section:nth-child(7) > section > div > div {
-    width: 145px;
-    height: 30px;
-    background-color: dodgerblue;
-    border-radius: 20px;
-    position: absolute;
-    left: 1105px;
 }
 
 body > section:nth-child(7) > section > div > div > a {

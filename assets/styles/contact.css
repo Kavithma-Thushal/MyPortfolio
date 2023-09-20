@@ -13,16 +13,16 @@ body > section:nth-child(9) > address > div > span {
     margin-left: 20px;
 }
 
-body > section:nth-child(9) > form {
-    position: absolute;
-    top: 150px;
-    right: 300px;
-}
-
 body > section:nth-child(9) > nav {
     position: absolute;
     top: 550px;
     left: 100px;
+}
+
+body > section:nth-child(9) > form {
+    position: absolute;
+    top: 150px;
+    right: 300px;
 }
 
 body > section:nth-child(9) > form > fieldset > button {

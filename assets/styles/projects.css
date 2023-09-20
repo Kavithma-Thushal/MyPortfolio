@@ -17,13 +17,6 @@ body > section:nth-child(5) > section > div > h3 {
     margin-left: 20px;
 }
 
-body > section:nth-child(5) > a {
-    text-decoration: none;
-    position: relative;
-    top: 120px;
-    left: 700px;
-}
-
 body > section:nth-child(5) > section > div:first-child > div {
     width: 145px;
     height: 30px;
@@ -62,4 +55,11 @@ body > section:nth-child(5) > section > div > div > a {
     bottom: 0;
     left: 15px;
     margin: auto;
+}
+
+body > section:nth-child(5) > a {
+    text-decoration: none;
+    position: relative;
+    top: 120px;
+    left: 700px;
 }
