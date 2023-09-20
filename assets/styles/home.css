@@ -1,7 +1,7 @@
 body > section:first-child > nav:first-child {
     position: absolute;
-    right: 0;
     margin-right: 25px;
+    right: 0;
 }
 
 body > section:first-child > nav:first-child > ul > li {
@@ -20,11 +20,11 @@ body > section:first-child > nav:first-child > ul > li:hover {
 }
 
 body > section:first-child > h2 {
+    color: dodgerblue;
+    font-size: 30px;
     position: absolute;
     top: 288px;
     left: 100px;
-    color: dodgerblue;
-    font-size: 30px;
 }
 
 body > section:first-child > h1 {
