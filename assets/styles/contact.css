@@ -19,6 +19,11 @@ body > section:nth-child(9) > nav {
     left: 100px;
 }
 
+body > section:nth-child(9) > nav:nth-child(3) > a:nth-child(4) > img {
+    position: relative;
+    top: 5px;
+}
+
 body > section:nth-child(9) > form {
     position: absolute;
     top: 150px;
