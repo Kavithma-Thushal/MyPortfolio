@@ -9,8 +9,9 @@
     <style>
         body > main {
             width: 900px;
-            height: 480px;
-            border: 2px solid black;
+            height: 500px;
+            overflow: hidden;
+
             position: absolute;
             left: 0;
             right: 0;
@@ -20,9 +21,16 @@
         }
 
         body > main > section {
-            height: 100%;
             width: 500%;
+            height: 100%;
             display: flex;
+
+            animation-name: case2;
+            animation-duration: 20s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
         }
 
         main > section > div {
@@ -54,8 +62,19 @@
             background-position: center;
         }
 
-        @keyframes case1 {
-
+        @keyframes case2 {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-25%);
+            }
+            50% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(-75%);
+            }
         }
     </style>
 </head>
