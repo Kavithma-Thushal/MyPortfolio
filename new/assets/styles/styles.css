@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+main {
+    width: 100%;
+    position: relative;
+    margin-top: 73px;
+}
+
+/*============================== Header ==============================*/
+header {
+    width: 100%;
+    height: 73px;
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.menu {
+    position: absolute;
+    right: 15px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Arial !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu ul li a {
+    line-height: 20px;
+    transition: 0.3s all;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: dodgerblue;
+}
+
+.hover-line::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: dodgerblue;
+    border-radius: 0%;
+    transition: width .3s;
+}
+
+.hover-line:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/*============================== Home ==============================*/
+.typed-cursor {
+    display: none;
+}
+
+main > section:nth-child(1) {
+    width: 100%;
+    background: black;
+    position: relative;
+}
+
+main > section:nth-child(1) > section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section:nth-child(1) > section > div {
+    width: 100%;
+    display: flex;
+    gap: 66px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 35px;
+    transition: all 2s;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > h2 {
+    font-family: Poppins;
+    font-size: 31px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: dodgerblue;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > h1:nth-child(2) {
+    font-family: Poppins;
+    font-size: 55px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: dodgerblue;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > h1:nth-child(2) > span {
+    font-family: Poppins;
+    font-size: 55px;
+    color: white;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > h1:nth-child(3) {
+    font-family: Poppins;
+    font-size: 50px;
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > h1:nth-child(3) > span {
+    font-family: Poppins;
+    font-size: 50px;
+    color: dodgerblue;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > button {
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Poppins;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 35%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+    margin-bottom: 20px;
+}
+
+button:active, button:hover {
+    outline: 0;
+}
+
+button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+button:hover span {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > nav {
+    display: flex;
+    gap: 15px;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > nav > div {
+    width: 67px;
+    height: 67px;
+    background: white;
+    border-radius: 15px;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > nav > div > a > i {
+    position: relative;
+    left: 23%;
+    top: 23%;
+    font-size: 2.40em;
+    color: black;
+    cursor: pointer;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > nav > div:nth-child(5) > a > i {
+    font-size: 2.00em;
+    top: 29%;
+    left: 32%;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(1) > nav > div:hover, a > i:hover {
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+    color: dodgerblue !important;
+}
+
+main > section:nth-child(1) > section > div > aside:nth-child(2) > div {
+    background: url(../images/KavithmaThushal.png);
+    width: 440px;
+    height: 547px;
+    background-size: cover;
+    position: relative;
+    bottom: 18px;
+}
