@@ -26,6 +26,10 @@
     <script></script>
 
     <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
         body > video {
             position: fixed;
             z-index: -1;
@@ -41,10 +45,10 @@
 <video class="body-overlay" autoplay="" loop="" muted="">
     <source src="assets/images/Background.mp4" type="video/mp4">
 </video>
-<section>
+<section id="home">
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
         <a href="#">Education</a>
         <a href="#">Skills</a>
         <a href="#">Projects</a>
@@ -160,7 +164,7 @@ c9.24,0,15.36-6.5,15.36-15.64c0-1.17-0.11-2.29-0.31-3.36C31.05,21,16,21,16,21z"/
         </div>
     </div>
 </section>
-<section></section>
+<section id="about"></section>
 <section></section>
 <section></section>
 <section></section>
