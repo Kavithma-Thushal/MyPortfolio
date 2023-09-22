@@ -1,7 +1,8 @@
+/*---Navigation Bar Starts---*/
 nav {
     width: 1350px;
     height: 50px;
-    position: fixed;
+    position: absolute;
     top: 10px;
     right: 10px;
     margin: 0 auto 0;
@@ -122,3 +123,99 @@ nav .start-projects, a:nth-child(9):hover ~ .animation {
     left: 1200px;
     background-color: dodgerblue;
 }
+
+/*---Navigation Bar Ends---*/
+
+body > section:nth-child(2) > h2 {
+    color: dodgerblue;
+    font-size: 40px;
+    position: absolute;
+    top: 220px;
+    left: 100px;
+}
+
+body > section:nth-child(2) > h1 {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 270px;
+    left: 100px;
+}
+
+body > section:nth-child(2) > h3 {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+}
+
+body > section:nth-child(2) > div:nth-child(6) {
+    width: 550px;
+    height: 450px;
+    background-color: dodgerblue;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+body > section:nth-child(2) > div:nth-child(6) > img {
+    width: 380px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*---Hire Me Starts---*/
+
+button {
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+
+    position: absolute;
+    top: 425px;
+    left: 100px;
+}
+
+button:active, button:hover {
+    outline: 0;
+}
+
+button span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+button:hover span {
+    background: none;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+/*---Hire Me Ends---*/
