@@ -220,3 +220,104 @@ button:active {
 }
 
 /*---Hire Me Ends---*/
+
+/*---Social Links Starts---*/
+.clip {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.svg--icon {
+    width: 100%;
+    max-width: 5rem;
+    height: 100%;
+    max-height: 5rem;
+    display: block;
+    margin: 0 auto;
+    fill: currentColor
+}
+
+.share {
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: .5rem 1rem .5rem 0;
+    color: white;
+    border: .125rem solid #f3f3f3;
+    box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15);
+    border-radius: 50%;
+    transition: 250ms;
+
+    &:last-child {
+        margin-right: 0
+    }
+
+    &:hover, &:focus {
+    / / background: #f1f1f1;
+    }
+
+    &:focus {
+        outline-color: inherit;
+    }
+}
+
+.twitter {
+    &:hover, &:focus {
+        color: #00ACED;
+        box-shadow: 0 0 24px 0 #00ACED
+    }
+}
+
+.github {
+    &:hover, &:focus {
+        color: #4183c4;
+        box-shadow: 0 0 24px 0 #4183c4
+    }
+}
+
+.pinterest {
+    &:hover, &:focus {
+        color: dodgerblue;
+        box-shadow: 0 0 24px 0 dodgerblue
+    }
+}
+
+.linkedin {
+    &:hover, &:focus {
+        color: dodgerblue;
+        box-shadow: 0 0 24px 0 dodgerblue
+    }
+}
+
+.facebook {
+    &:hover, &:focus {
+        color: dodgerblue;
+        box-shadow: 0 0 24px 0 dodgerblue
+    }
+}
+
+.google {
+    &:hover, &:focus {
+        color: dodgerblue;
+        box-shadow: 0 0 24px 0 #0077B5
+    }
+}
+
+body section:nth-child(2) > div:last-child > div > div {
+    position: absolute;
+    left: 100px;
+    top: 530px;
+}
+
+body section:nth-child(2) > div:last-child > div > div > a {
+    width: 60px;
+    height: 60px;
+}
+
+/*---Social Links Ends---*/
