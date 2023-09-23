@@ -152,7 +152,7 @@ main > section:nth-child(1) > section > div > aside:nth-child(1) > nav > div:hov
 }
 
 main > section:nth-child(1) > section > div > aside:nth-child(2) > div {
-    background: url(../images/KavithmaThushal.png);
+    background: url(../images/home.png);
     width: 440px;
     height: 547px;
     background-size: cover;
