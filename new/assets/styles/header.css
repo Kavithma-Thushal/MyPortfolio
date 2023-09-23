@@ -1,0 +1,48 @@
+header {
+    width: 100%;
+    height: 73px;
+    background: black;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.menu {
+    position: absolute;
+    right: 15px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Arial !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu ul li a {
+    line-height: 20px;
+    transition: 0.3s all;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: dodgerblue;
+}
+
+.hover-line::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: dodgerblue;
+    border-radius: 0%;
+    transition: width .3s;
+}
+
+.hover-line:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
