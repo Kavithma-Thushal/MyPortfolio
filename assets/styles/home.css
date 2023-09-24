@@ -21,6 +21,11 @@ body > section:first-child > nav:nth-child(1) li {
     position: relative; /* Added for the pseudo-element */
 }
 
+body > section:first-child > nav:nth-child(1) li a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit the color from parent li on hover */
+}
+
 body > section:first-child > nav:nth-child(1) li::before {
     content: "";
     position: absolute;
@@ -58,13 +63,13 @@ body > section:first-child > h2 {
 
 body > section:first-child > h1 {
     position: absolute;
-    top: 345px;
+    top: 348px;
     left: 100px;
 }
 
 body > section:first-child > h3 {
     position: absolute;
-    top: 378px;
+    top: 382px;
     left: 100px;
     font-size: 18px;
 }
@@ -123,6 +128,7 @@ body > section:first-child > button::after {
 
 body > section:first-child > button:hover::after {
     animation-play-state: running;
+    cursor: pointer;
 }
 
 @keyframes rotate-hue {
@@ -158,6 +164,12 @@ body > section:first-child > nav:nth-child(6) a {
 body > section:first-child > nav:nth-child(6) img {
     width: 40px;
     height: auto;
+}
+
+body > section:first-child > nav:nth-child(6) img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px #00faff;
+    border-radius: 100%;
 }
 
 body > section:first-child > nav:nth-child(6) > a:nth-child(4) > img {
