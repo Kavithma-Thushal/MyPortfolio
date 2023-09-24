@@ -1,0 +1,102 @@
+body > section:first-child > nav:first-child {
+    position: absolute;
+    margin-right: 25px;
+    right: 0;
+}
+
+body > section:first-child > nav:first-child > ul > li {
+    display: inline-block;
+    padding: 12px;
+}
+
+body > section:first-child > nav:first-child > ul > li:hover {
+    height: 15px;
+    background-color: dodgerblue;
+    padding-top: 5px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body > section:first-child > h2 {
+    color: dodgerblue;
+    font-size: 30px;
+    position: absolute;
+    top: 288px;
+    left: 100px;
+}
+
+body > section:first-child > h1 {
+    position: absolute;
+    top: 345px;
+    left: 100px;
+}
+
+body > section:first-child > h3 {
+    position: absolute;
+    top: 378px;
+    left: 100px;
+    font-size: 18px;
+}
+
+body > section:first-child > div:nth-child(5) {
+    width: 136px;
+    height: 40px;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    position: absolute;
+    top: 490px;
+    left: 100px;
+}
+
+body > section:first-child > div:nth-child(5) > a {
+    width: 70px;
+    height: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 14px;
+    margin: auto;
+}
+
+body > section:first-child > div:nth-child(5) > img {
+    width: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+}
+
+body > section:first-child > nav:nth-child(6) {
+    position: absolute;
+    top: 580px;
+    left: 100px;
+}
+
+body > section:first-child > nav:nth-child(6) > a:nth-child(4) > img {
+    position: relative;
+    top: 5px;
+}
+
+body > section:first-child > div:nth-child(7) {
+    width: 550px;
+    height: 450px;
+    background-color: dodgerblue;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+body > section:first-child > div:nth-child(7) > img {
+    width: 380px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
