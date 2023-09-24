@@ -7,6 +7,11 @@ body > section:nth-child(6) > section {
 
 body > section:nth-child(6) > section > div > h3 {
     margin-left: 10px;
+    text-align: center;
+}
+body > section:nth-child(6) > section > div >a> img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px dodgerblue;
 }
 
 body > section:nth-child(6) > section > div:first-child > div {
@@ -15,7 +20,7 @@ body > section:nth-child(6) > section > div:first-child > div {
     background-color: dodgerblue;
     border-radius: 20px;
     position: absolute;
-    left: 235px;
+    left: 185px;
 }
 
 body > section:nth-child(6) > section > div:nth-child(2) > div {
@@ -33,7 +38,7 @@ body > section:nth-child(6) > section > div:nth-child(3) > div {
     background-color: dodgerblue;
     border-radius: 20px;
     position: absolute;
-    left: 1015px;
+    left: 1070px;
 }
 
 body > section:nth-child(6) > section > div > div > a {
