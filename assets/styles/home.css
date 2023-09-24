@@ -1,22 +1,47 @@
-body > section:first-child > nav:first-child {
-    position: absolute;
-    margin-right: 25px;
-    right: 0;
+body > section:first-child > nav:nth-child(1) {
+    text-align: right; /* Align the list items to the right */
 }
 
-body > section:first-child > nav:first-child > ul > li {
-    display: inline-block;
-    padding: 12px;
+body > section:first-child > nav:nth-child(1) ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    margin: 0;
 }
 
-body > section:first-child > nav:first-child > ul > li:hover {
-    height: 15px;
-    background-color: dodgerblue;
-    padding-top: 5px;
+body > section:first-child > nav:nth-child(1) li {
+    margin-right: 20px;
+    padding: 10px;
     border-radius: 5px;
-    color: black;
-    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
     cursor: pointer;
+    display: inline-block;
+    position: relative; /* Added for the pseudo-element */
+}
+
+body > section:first-child > nav:nth-child(1) li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #f06, #9f6, #06f, #f06); /* Neon gradient */
+    opacity: 0;
+    z-index: -1; /* Place behind the text */
+    transition: opacity 0.3s; /* Fade-in transition */
+}
+
+body > section:first-child > nav:nth-child(1) li:hover {
+    background-color: dodgerblue;
+    color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.7); /* Neon glow effect */
+}
+
+body > section:first-child > nav:nth-child(1) li:hover::before {
+    opacity: 1; /* Show the neon glow on hover */
 }
 
 body > section:first-child > h2 {
