@@ -8,11 +8,22 @@
 body > section {
     height: 100vh;
     position: relative;
-    background-color: #29dbbc;
+    background-color: grey;
 }
 
-body>section>h1{
+body > section > h1 {
     margin-top: 0;
     text-align: center;
     padding-top: 10px;
+}
+
+body > section > div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+body > section > div > img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px dodgerblue;
 }
