@@ -2,15 +2,7 @@ body > section:nth-child(7) > section {
     display: flex;
     justify-content: space-evenly;
     margin-top: 150px;
-}
-
-body > section:nth-child(7) > section > div > div {
-    width: 145px;
-    height: 30px;
-    background-color: dodgerblue;
-    border-radius: 20px;
-    position: absolute;
-    left: 1105px;
+    width: 98%;
 }
 
 body > section:nth-child(7) > section > div:first-child > div {
@@ -19,7 +11,7 @@ body > section:nth-child(7) > section > div:first-child > div {
     background-color: dodgerblue;
     border-radius: 20px;
     position: absolute;
-    left: 265px;
+    left: 225px;
 }
 
 body > section:nth-child(7) > section > div:nth-child(2) > div {
@@ -28,7 +20,16 @@ body > section:nth-child(7) > section > div:nth-child(2) > div {
     background-color: dodgerblue;
     border-radius: 20px;
     position: absolute;
-    left: 690px;
+    left: 625px;
+}
+
+body > section:nth-child(7) > section > div:nth-child(3) > div {
+    width: 145px;
+    height: 30px;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    position: absolute;
+    left: 1025px;
 }
 
 body > section:nth-child(7) > section > div > div > a {
@@ -48,5 +49,5 @@ body > section:nth-child(7) > a {
     text-decoration: none;
     position: relative;
     top: 120px;
-    left: 700px;
+    left: 645px;
 }

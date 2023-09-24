@@ -2,6 +2,7 @@ body > section:nth-child(5) > section {
     margin-top: 80px;
     display: flex;
     justify-content: space-evenly;
+    width: 98%;
 }
 
 body > section:nth-child(5) > section > div {
@@ -23,7 +24,7 @@ body > section:nth-child(5) > section > div:first-child > div {
     background-color: dodgerblue;
     border-radius: 20px;
     position: absolute;
-    left: 265px;
+    left: 235px;
 }
 
 body > section:nth-child(5) > section > div:nth-child(2) > div {
@@ -32,7 +33,7 @@ body > section:nth-child(5) > section > div:nth-child(2) > div {
     background-color: dodgerblue;
     border-radius: 20px;
     position: absolute;
-    left: 705px;
+    left: 660px;
 }
 
 body > section:nth-child(5) > section > div:nth-child(3) > div {
@@ -41,7 +42,7 @@ body > section:nth-child(5) > section > div:nth-child(3) > div {
     background-color: dodgerblue;
     border-radius: 20px;
     position: absolute;
-    left: 1130px;
+    left: 1060px;
 }
 
 body > section:nth-child(5) > section > div > div > a {
@@ -61,5 +62,5 @@ body > section:nth-child(5) > a {
     text-decoration: none;
     position: relative;
     top: 120px;
-    left: 700px;
+    left: 680px;
 }
