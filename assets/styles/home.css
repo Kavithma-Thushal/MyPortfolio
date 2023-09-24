@@ -168,7 +168,7 @@ body > section:first-child > nav:nth-child(6) img {
 
 body > section:first-child > nav:nth-child(6) img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px 2px #00faff;
+    box-shadow: 0 0 10px 2px dodgerblue;
     border-radius: 100%;
 }
 

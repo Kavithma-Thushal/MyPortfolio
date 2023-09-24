@@ -19,3 +19,9 @@ body > section:nth-child(3) > section > div > span:first-child {
     border-radius: 20px;
     font-weight: bold;
 }
+
+body > section:nth-child(3) > section > div > span:first-child:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px dodgerblue;
+    cursor: pointer;
+}
