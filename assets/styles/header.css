@@ -1,0 +1,113 @@
+header {
+    position: fixed;
+    background: black;
+    width: 100%;
+    top: 0;
+    height: 73px;
+    z-index: 999;
+}
+
+#heading1 {
+    position: relative;
+    left: 20px;
+    top: 15px;
+    text-decoration: none;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+
+    color: white;
+}
+
+#heading2 {
+    font-family: "Agency FB";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+
+    color: dodgerblue;
+}
+
+.headingFirstShape {
+    box-sizing: border-box;
+    border-radius: 100px;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: -42px;
+    top: -37px;
+
+    background: #ECF0F3;
+    border: 25px solid rgba(2, 71, 246, 0.65);
+}
+
+.headingSecondShape {
+    position: absolute;
+    border-radius: 100px;
+    width: 133px;
+    height: 133px;
+    right: -58px;
+    top: -58px;
+
+    background: rgba(51, 102, 255, 0.49);
+}
+
+.menu {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Bahnschrift !important;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.menu ul li a {
+    line-height: 20px;
+    text-decoration: none;
+    transition: 0.3s all;
+    color: white;
+}
+
+.menu ul li a:hover {
+    /*color: dodgerblue;*/
+}
+
+.menu ul li #active {
+    /*color: dodgerblue;*/
+}
+
+.hover-line::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 6px;
+    background-color: dodgerblue;
+    border-radius: 0%;
+    transition: width .3s;
+}
+
+.hover-line:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.active-hover-line::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 6px;
+    /*background-color: dodgerblue;*/
+    border-radius: 0%;
+    transition: width .3s;
+}
