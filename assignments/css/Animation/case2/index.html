@@ -4,76 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="normalize.css">
     <title>Case2</title>
     <style>
-        body > main {
-            width: 1000px;
-            height: 500px;
-            overflow: hidden;
+        body {
+            background-color: black;
+        }
 
+        main > div {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
             position: absolute;
-            left: 0;
-            right: 0;
             top: 0;
             bottom: 0;
+            left: 0;
+            right: 0;
             margin: auto;
+            background: black;
+
         }
 
-        body > main > section {
-            width: 500%;
-            height: 100%;
-            display: flex;
-
-            animation-name: case2;
-            animation-duration: 20s;
-            animation-delay: 1s;
+        main > div:nth-child(1) {
+            background: #DE9506;
+            animation-name: moon;
+            animation-duration: 5s;
             animation-iteration-count: infinite;
-            animation-timing-function: linear;
             animation-direction: alternate;
+            animation-timing-function: linear;
         }
 
-        main > section > div {
-            width: calc(100% / 5);
-            height: 100%;
-        }
-
-        body > main > section > div:first-child {
-            background-image: url("assets/images/1.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        body > main > section > div:nth-child(2) {
-            background-image: url("assets/images/2.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        body > main > section > div:nth-child(3) {
-            background-image: url("assets/images/3.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        body > main > section > div:nth-child(4) {
-            background-image: url("assets/images/4.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        @keyframes case2 {
+        @keyframes moon {
             0% {
-                transform: translateX(0);
-            }
-            25% {
-                transform: translateX(-25%);
+                bottom: 70px;
+                left: 70px;
             }
             50% {
-                transform: translateX(-50%);
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                box-shadow: 0 0 10vw 0px #DE9506;
             }
             100% {
-                transform: translateX(-60%);
+                top: 70px;
+                right: 70px;
             }
         }
     </style>
@@ -81,12 +56,8 @@
 
 <body>
 <main>
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
+    <div></div>
+    <div></div>
 </main>
 </body>
 </html>
