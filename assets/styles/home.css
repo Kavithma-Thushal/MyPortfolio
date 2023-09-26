@@ -61,7 +61,7 @@ main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > b
     width: 206px;
     height: 68px;
     background-color: dodgerblue;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.36);
     font-family: 'Ubuntu', sans-serif;
     font-weight: 800;
@@ -182,7 +182,7 @@ main > section:first-child > section > div:first-child > div:nth-child(3) {
 * main image section in home section
 */
 main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
-    background: url(../img/homeimage.png);
+    background: url(../img/home-img.png);
     width: 440px;
     height: 547px;
     background-size: cover;
