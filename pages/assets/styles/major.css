@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/*======================================== ScrollBar ========================================*/
+::-webkit-scrollbar {
+    display: none;
+    width: 6px;
+    background: #3f3838;
+}
+
+::-webkit-scrollbar-thumb {
+    background: dodgerblue;
+}
+
+/**
+ * Customized Scroll Up Button.
+ */
+#scroll_up_btn {
+    position: fixed;
+    opacity: 100%;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: dodgerblue;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+#scroll_up_btn > i {
+    font-size: 19px;
+    color: black;
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
+
+#scroll_up_btn:hover {
+    color: dodgerblue !important;
+    opacity: 100%;
+    transform: translateY(-5px);
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+}
+
+a {
+    color: #0563bb;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #067ded;
+    text-decoration: none;
+}
+
+#section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+#section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#section-title h1 {
+    font-size: 50px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    margin-bottom: 7px;
+    padding-bottom: 18px;
+    position: relative;
+    color: white;
+}
+
+#section-title h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
+}
+
+#section-title h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 220px;
+    height: 3px;
+    background: dodgerblue !important;
+    bottom: 0;
+    left: calc(50% - 110px);
+    border-radius: 3px;
+}
+
+#section-title p {
+    margin-bottom: 0;
+}
+
+#section-title h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: initial;
+    font-size: 25px;
+    color: dodgerblue !important;
+    text-align: center;
+    padding-top: 12px;
+    margin: 0;
+}
