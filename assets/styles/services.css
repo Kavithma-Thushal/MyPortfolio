@@ -1,0 +1,172 @@
+main > section:nth-child(3) {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: black;
+}
+
+/**
+* title in service section
+*/
+main > section:nth-child(3) > section:first-child {
+    position: relative;
+    text-align: center;
+    padding-top: 68px;
+}
+
+main > section:nth-child(3) > section:first-child > h4 {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: initial;
+    font-size: 25px;
+    color: dodgerblue !important;
+    text-align: center;
+    padding-top: 12px;
+    margin: 0;
+}
+
+main > section:nth-child(3) > section:first-child > h1 {
+    font-family: Ubuntu, sans-serif !important;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    padding-bottom: 18px;
+    color: white;
+}
+
+/**
+* title underline in service section
+*/
+main > section:nth-child(3) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
+}
+
+main > section:nth-child(3) > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 220px;
+    height: 6px;
+    background: dodgerblue;
+    bottom: 0;
+    left: calc(50% - 110px);
+    /*border-radius: 3px;*/
+}
+
+/**
+* div tags customized service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section > div {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background: #ECF0F3;
+    /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
+    border-radius: 25px;
+}
+
+main > section:nth-child(3) > section:nth-child(2) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 70px;
+    margin-right: 69px;
+    transition: all 2s;
+}
+
+/**
+* main section position and display flex service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section {
+    width: 1095px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 66px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 2s;
+}
+
+/**
+* images position service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section > div > div:first-child {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: 50px;
+    margin: auto;
+}
+
+/**
+* added images colors and sizes service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section > div > div:first-child > i {
+    color: dodgerblue;
+    font-size: 2.40em;
+}
+
+/**
+* added headings and positions headings service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section > div > h4:nth-child(2) {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    right: 0;
+    font-family: 'Ubuntu' !important;
+    font-size: 22px;
+    text-align: center;
+    color: black;
+}
+
+/**
+* added descriptions service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section > div > p:nth-child(3) {
+    position: absolute;
+    width: 264px;
+    top: 155px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 17px;
+    text-align: center;
+    color: #9494A1 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/**
+* added cube shape service section
+*/
+main > section:nth-child(3) > div:nth-child(3) {
+    position: absolute;
+    width: 248px;
+    height: 208px;
+    right: 58px;
+    margin: auto;
+    top: 812px;
+    z-index: 1;
+    transition: all 2s;
+}
+
+main > section:nth-child(3) > section:nth-child(2) > section:first-child > div:hover {
+    transition: all 0.7s ease;
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    box-shadow: 0 0 10px 10px dodgerblue;
+    cursor: pointer;
+}
