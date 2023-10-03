@@ -7,58 +7,67 @@
     <link rel="stylesheet" href="normalize.css">
     <title>QUE</title>
     <style>
-        body > section {
-            height: 100vh;
+        section {
+            width: 70vw;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
             display: flex;
-            justify-content: center;
             align-items: center;
         }
 
-        body > section > div:nth-child(1) {
-            width: 300px;
-            height: 100px;
-            background-color: dodgerblue;
+        section > div {
+            flex-grow: 1;
+            height: 33%;
+            border: 1px solid black;
         }
 
-        body > section > div:nth-child(2) {
-            width: 300px;
-            height: 100px;
-            background-color: mediumpurple;
+        section > div:first-child {
+            align-self: start;
         }
 
-        body > section > div:nth-child(3) {
-            width: 300px;
-            height: 100px;
-            background-color: red;
-        }
-
-        body > div:nth-child(1) {
-            width: 300px;
-            height: 100px;
-            background-color: yellow;
-            position: absolute;
-            top: 202px;
-            left: 18px;
-        }
-
-        body > div:nth-child(3) {
-            width: 300px;
-            height: 100px;
-            background-color: green;
-            position: absolute;
-            bottom: 202px;
-            right: 18px;
+        section > div:last-child {
+            align-self: end;
         }
     </style>
 </head>
 
 <body>
-<div></div>
+
 <section>
     <div></div>
     <div></div>
     <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 </section>
-<div></div>
+
+<script>
+
+    //colors (store 6 colors in a array)
+    let colors = ['yellow','deeppink','blue','red', 'green', 'orange'];
+    let divs = document.querySelectorAll("section>div");
+    //set those colors to the 6 div
+
+    setInterval(processQue,200);
+
+    function processQue() {
+        for (let i = 0; i < colors.length; i++) {
+            divs[i].style.background=colors[i];
+        }
+
+        // remove the last index of an array
+        let lastValue=colors.pop();
+        colors.unshift(lastValue);
+    }
+
+
+
+</script>
 </body>
 </html>
