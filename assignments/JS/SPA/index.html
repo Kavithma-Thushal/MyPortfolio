@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>POS | Home</title>
-    <!--<link rel="stylesheet" href="view/assets/fonts/css/all.css">-->
     <link rel="stylesheet" href="assets/styles/bootstrap-5.3.2/css/bootstrap.css">
+    <title>POS | Home</title>
 </head>
 
 <body>
@@ -749,8 +748,10 @@
     </main>
 </section>
 
+<script src="assets/styles/bootstrap-5.3.2/js/bootstrap.js"></script>
+<script src="assets/styles/bootstrap-5.3.2/js/jquery-3.7.1.js"></script>
+
 <script>
-    /*-------------------- SPA Starts --------------------*/
     //select all contents
     let dash = document.querySelector("#dashboardContent");
     let customer = document.querySelector("#customerContent");
@@ -796,62 +797,6 @@
         item.style.display = 'none';
         order.style.display = 'block';
     })
-    /*-------------------- SPA Ends --------------------*/
-
-    /*//Customer Mange
-    let btnSave = document.querySelector("#btnCustomer");
-    let btnGetAll = document.querySelector("#btnGetAll");
-    let tBody = document.querySelector("#tblCustomer");
-
-    //select 4 text fields
-    let txtID = document.querySelector("#txtCustomerID");
-    let txtName = document.querySelector("#txtCustomerName");
-    let txtAddress = document.querySelector("#txtCustomerAddress");
-    let txtSalary = document.querySelector("#txtCustomerSalary");
-
-    var customers = [
-        {id: "C001", name: "Dasun", address: "Galle", salary: 1000.22},
-        {id: "C002", name: "Iman", address: "Mathara", salary: 2000.22}
-    ];
-
-    //save a customer
-    btnSave.addEventListener("click", function () {
-        //create customer object and fill all the data
-        var customer = {
-            id: txtID.value,
-            name: txtName.value,
-            address: txtAddress.value,
-            salary: txtSalary.value
-        }
-        //add customer to object to the array
-        customers.push(customer);
-        console.log(customers);
-    });
-
-    //load all customers from the array to the table
-    btnGetAll.addEventListener("click", function () {
-        for (let i = 0; i < customers.length; i++) {
-            let tr = document.createElement("tr");
-            let td1 = document.createElement("td");
-            td1.textContent=customers[i].id;
-            let td2 = document.createElement("td");
-            td2.textContent=customers[i].name;
-            let td3 = document.createElement("td");
-            td3.textContent=customers[i].address;
-            let td4 = document.createElement("td");
-            td4.textContent=customers[i].salary;
-            tr.append(td1,td2,td3,td4);
-            tBody.append(tr);
-        }
-
-    });*/
-</script>
-
-<script src="assets/styles/bootstrap-5.3.2/js/bootstrap.js"></script>
-<script src="assets/js/jquery-3.7.1.js"></script>
-
-<script>
-
 </script>
 </body>
 </html>
