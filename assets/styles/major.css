@@ -67,13 +67,10 @@ main {
     transform: translateY(-5px);
 }
 
-
-
-
+/*======================================== Loader ========================================*/
 #loader {
     width: 100vw;
     height: 100vh;
-    border: 1px solid white;
     background: white;
     position: fixed;
     top: 0;
@@ -94,5 +91,4 @@ main {
     right: 0;
     bottom: 0;
     margin: auto;
-
 }
