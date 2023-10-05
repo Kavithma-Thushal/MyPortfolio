@@ -66,3 +66,33 @@ main {
     opacity: 100%;
     transform: translateY(-5px);
 }
+
+
+
+
+#loader {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid white;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#loader > div {
+    width: 300px;
+    height: 300px;
+    background: url("../img/loader.gif");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
