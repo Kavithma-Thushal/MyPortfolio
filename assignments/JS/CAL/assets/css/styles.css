@@ -36,21 +36,19 @@ body > section > button {
 
 body > section > button:hover {
     cursor: pointer;
+    color: white;
 }
 
 .operators {
-    background-color: grey;
-    color: white;
+    background-color: green;
 }
 
 #clear {
     background-color: red;
-    color: white;
 }
 
 #eq {
     background-color: orangered;
-    color: white;
 }
 
 label {
