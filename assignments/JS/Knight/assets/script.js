@@ -13,7 +13,7 @@ let value = 45;
 let interval;
 let intervalReverse;
 
-setColor();
+//setColor();
 
 range.addEventListener("input", function () {
     value = 300 - parseInt(range.value);
