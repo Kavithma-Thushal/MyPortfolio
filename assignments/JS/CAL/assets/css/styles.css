@@ -40,7 +40,7 @@ body > section > button:hover {
 }
 
 .operators {
-    background-color: green;
+    background-color: mediumpurple;
 }
 
 #clear {
@@ -48,7 +48,7 @@ body > section > button:hover {
 }
 
 #eq {
-    background-color: orangered;
+    background-color: green;
 }
 
 label {
