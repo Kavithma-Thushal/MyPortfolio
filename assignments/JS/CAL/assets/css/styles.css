@@ -1,0 +1,63 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #14192B;
+}
+
+body > section {
+    width: 35%;
+    height: 50%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body > section > :nth-child(2) {
+    grid-column: 2/5;
+}
+
+body > section > button {
+    background-color: dodgerblue;
+    border-radius: 5%;
+    font-size: 2em;
+    color: black;
+    transition: 0.5s;
+}
+
+body > section > button:hover {
+    cursor: pointer;
+}
+
+.operators {
+    background-color: grey;
+    color: white;
+}
+
+#clear {
+    background-color: red;
+    color: white;
+}
+
+#eq {
+    background-color: orangered;
+    color: white;
+}
+
+label {
+    padding: 10px;
+    font-size: 2em;
+    text-align: right;
+    background-color: white;
+    border-radius: 3%;
+    color: black;
+}
