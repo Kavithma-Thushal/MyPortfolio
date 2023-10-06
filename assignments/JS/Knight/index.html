@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../SPA/assets/styles/bootstrap-5.3.2/css/bootstrap.css">
+    <title>Knight-Rider</title>
+</head>
+
+<body style="background-color: black">
+<div class="container-fluid " style="height: 80vh">
+    <div class="row-cols-1 h-50    position-relative ">
+        <div class="container w-100 h-100 ">
+            <div class="row  w-100 h-50  position-relative justify-content-center p-0 m-0">
+                <img src="assets/logo.png" alt="" class="position-absolute p-0 m-0"
+                     style="width: 40%;">
+            </div>
+            <div class="row h-25 position-relative justify-content-center start-50 translate-middle mt-5 ms-5 "
+                 style="width:40%; ">
+                <div class="col-4  p-0 m-0 ">
+                    <p class="fs-3 opacity-75  d-inline-block" style="width:40%; color: #bb2d3b">Speed </p>
+                    <p id="speed" class="fs-3  ms-2 ps-2 border-end border-danger d-inline-block  "
+                       style="width: 50%; color: #0c5ace">85%</p>
+                </div>
+                <div class="col-8  p-0 m-0 ">
+                    <p class="fs-3 opacity-75 ms-3  d-inline-block " style="width:50%; color: #bb2d3b">Waiting Time </p>
+                    <p id="time" class="fs-3   ps-0  d-inline-block" style="width: 10%; color: #0c5ace">450</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-cols-1 h-25 position-relative">
+        <div class="container-fluid  position-absolute top-50 start-50 translate-middle p-0 "
+             style="width: 80vw; height: 10vw;">
+            <div class="row bg-transparent  w-100 m-0 position-absolute top-50 translate-middle-y rounded-5 gap-1 "
+                 style="height: 30%;">
+                <div id="firstDiv" class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div id="lastDiv" class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row h-25 w-50  position-relative align-items-center" style="left: 30vw;">
+        <div class="col-5 d-flex">
+            <div>
+                <button id="start" class="btn  btn-outline-primary me-5 " style="width: 8vw;">Start</button>
+            </div>
+            <div>
+                <button id="stop" class="btn  btn-outline-danger me-5 " style="width: 8vw;">Stop</button>
+            </div>
+        </div>
+        <div class="col-7 position-relative  ">
+            <input type="range" class="form-range w-75 h-25 ms-5" min="0" max="300" value="255" id="customRange"
+                   style=" ">
+        </div>
+    </div>
+</div>
+<audio id="audio" src="assets/theme_song.mp3"></audio>
+
+<script src="../SPA/assets/styles/bootstrap-5.3.2/js/bootstrap.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
