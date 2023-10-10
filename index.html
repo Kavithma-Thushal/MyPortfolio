@@ -79,7 +79,7 @@
                 <aside>
                     <h3>Hello</h3>
                     <h1><span>I'm</span> Kavithma Thushal</h1>
-                    <h1>a <span class="typing"></span>FullStack Developer</h1>
+                    <h1>a <span class="typing"></span>|</h1>
                     <button>Hire Me
                         <!--<div><i class="fa-solid fa-circle-chevron-right"></i></div>-->
                     </button>
@@ -800,11 +800,21 @@
     <section><small>© 2023 All Right Reserved Designed By Kavithma Thushal</small></section>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 <script src="assets/js/jquery-3.7.1.js"></script>
 <script>
+    // loader
     $(window).on('load', function () {
         // $("#loader").css('display','none');
         $("#loader").fadeOut(1000);
+    });
+
+    // home typing
+    let typed = new Typed(".typing", {
+        strings: ["", "Software Engineer", "FullStack Developer", "Competitive Programmer"],
+        typeSpeed: 100,
+        backSpeed: 0,
+        loop: true
     });
 </script>
 </body>

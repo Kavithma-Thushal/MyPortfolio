@@ -37,7 +37,7 @@ main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h
 
 main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) {
     font-family: Poppins;
-    font-size: 50px;
+    font-size: 35px;
     color: white;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -45,7 +45,7 @@ main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h
 
 main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) > span {
     font-family: Poppins;
-    font-size: 50px;
+    font-size: 35px;
     color: dodgerblue;
 }
 
