@@ -750,51 +750,48 @@
 
 <script src="assets/styles/bootstrap-5.3.2/js/bootstrap.js"></script>
 <script>
-    //select all contents
-    let dash = document.querySelector("#dashboardContent");
-    let customer = document.querySelector("#customerContent");
-    let item = document.querySelector("#itemContent");
-    let order = document.querySelector("#orderContent");
+    const dashboard = document.querySelector('#dashboardContent');
+    const customer = document.querySelector('#customerContent');
+    const item = document.querySelector('#itemContent');
+    const orders = document.querySelector('#orderContent');
 
-    //select all the link and bind click events
-    let lnkHome = document.querySelector("#lnkHome");
-    let lnkCustomer = document.querySelector("#lnkCustomer");
-    let lnkItem = document.querySelector("#lnkItem");
-    let lnkOrder = document.querySelector("#lnkOrders");
+    const btnHome = document.querySelector('#lnkHome');
+    const btnCustomer = document.querySelector('#lnkCustomer');
+    const btnItem = document.querySelector('#lnkItem');
+    const btnOrders = document.querySelector('#lnkOrders');
 
-    //hide all the 4 content sections and display only dashboard
-    dash.style.display = 'block';
-    customer.style.display = 'none';
-    item.style.display = 'none';
-    order.style.display = 'none';
-
-    lnkHome.addEventListener("click", function () {
-        dash.style.display = 'block';
+    function hideAll() {
+        dashboard.style.display = 'none';
         customer.style.display = 'none';
         item.style.display = 'none';
-        order.style.display = 'none';
-    })
+        orders.style.display = 'none';
+    }
 
-    lnkCustomer.addEventListener("click", function () {
-        dash.style.display = 'none';
+    function displayDashboard() {
+        hideAll();
+        dashboard.style.display = 'block';
+    }
+
+    function displayCustomer() {
+        hideAll();
         customer.style.display = 'block';
-        item.style.display = 'none';
-        order.style.display = 'none';
-    })
+    }
 
-    lnkItem.addEventListener("click", function () {
-        dash.style.display = 'none';
-        customer.style.display = 'none';
+    function displayItem() {
+        hideAll();
         item.style.display = 'block';
-        order.style.display = 'none';
-    })
+    }
 
-    lnkOrder.addEventListener("click", function () {
-        dash.style.display = 'none';
-        customer.style.display = 'none';
-        item.style.display = 'none';
-        order.style.display = 'block';
-    })
+    function displayOrders() {
+        hideAll();
+        orders.style.display = 'block';
+    }
+
+    displayDashboard();
+    btnHome.addEventListener('click', displayDashboard);
+    btnCustomer.addEventListener('click', displayCustomer);
+    btnItem.addEventListener('click', displayItem);
+    btnOrders.addEventListener('click', displayOrders);
 </script>
 </body>
 </html>
