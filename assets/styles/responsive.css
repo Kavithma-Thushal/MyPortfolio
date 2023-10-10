@@ -1,3 +1,191 @@
+/*======================================== 1231px ========================================*/
+@media (max-width: 1231px) {
+    /*about section*/
+    main > section:first-child > section:first-child > div:first-child {
+        width: 1100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        margin-top: 69px;
+        row-gap: 15px;
+        transition: all 2s;
+    }
+
+    #aboutWave {
+        display: block;
+        position: absolute;
+        width: 352px;
+        height: 74px;
+        fill: none;
+        left: 0px;
+        top: 588px;
+        transition: all 2s;
+    }
+
+    #aboutCube2 {
+        display: block;
+        position: absolute;
+        width: 114px;
+        height: 157px;
+        fill: none;
+        right: 160px;
+        top: 433px;
+        transition: all 2s;
+        z-index: -1;
+    }
+
+    /*services section*/
+    main > section:nth-child(3) > section:nth-child(2) > section {
+        transition: all 2s;
+    }
+
+    main > section:nth-child(3) > div:nth-child(3) {
+        top: 1200px;
+        transition: all 2s;
+    }
+
+    /*gallery section*/
+    main > section:nth-child(5) > section:nth-child(2) > section:first-child {
+        width: 900px;
+        height: 500px;
+        display: grid;
+        transition: all 2s;
+    }
+
+    /*project section*/
+    .wrapper {
+        width: 900px;
+        gap: 28px;
+        row-gap: 60px;
+        transition: all 2s;
+    }
+
+    .card {
+        width: 430px;
+        transition: all 2s;
+    }
+
+    .card_detail h4 {
+        margin: 22px 50px 15px;
+        transition: .5s;
+    }
+
+    .card_detail p {
+        font-family: 'Poppins';
+        color: #666;
+        font-size: 15px;
+        transition: all 2s;
+    }
+
+    /*home section*/
+    main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
+        width: 380px;
+        height: 487px;
+    }
+
+    main > section:first-child > section:first-child > div:first-child {
+        margin-top: 2px;
+        transition: all 2s;
+    }
+
+    /*client section*/
+    main > section:nth-child(6) > section:nth-child(6) > div:first-child {
+        width: 1087px;
+        row-gap: 16px;
+        transition: all .5s;
+    }
+
+    main > section:nth-child(6) > section:nth-child(6) {
+        margin-top: 45px;
+        transition: all .5s;
+    }
+
+    /*contact section*/
+    main > section:nth-child(7) > section:first-child {
+        padding-top: 10px;
+    }
+}
+
+/*======================================== 1179px ========================================*/
+@media (max-width: 1179px) {
+    /*home section*/
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h3:first-child {
+        font-size: 26px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(2) > span {
+        font-size: 45px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) > span {
+        font-size: 45px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(2) {
+        font-size: 45px;
+        margin-top: 9px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) {
+        font-size: 40px;
+        margin-top: 9px;
+        margin-bottom: 12px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) {
+        font-size: 40px;
+        margin-top: 9px;
+        margin-bottom: 12px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4) {
+        width: 177px;
+        height: 57px;
+        font-size: 22px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4) > div {
+        top: 4px;
+        left: 120px;
+        height: 50px;
+        width: 52px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > h3 {
+        font-size: 18px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav > div {
+        width: 55px;
+        height: 55px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > a > i {
+        font-size: 1.7em;
+        left: 32%;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div > a > i {
+        left: 23%;
+        top: 26%;
+        font-size: 1.9em;
+        transition: all 2s;
+    }
+}
+
 /*======================================== 1024px ========================================*/
 @media (max-width: 1024px) {
     /*contact section*/
@@ -94,6 +282,226 @@
     }
 }
 
+/*======================================== 996px ========================================*/
+@media (max-width: 996px) {
+    /*header*/
+    .menu {
+        display: none;
+        transition: all .5s;
+    }
+
+    #header-Nav {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin-right: 52px;
+        background: none;
+        border: none;
+        transition: all .5s;
+    }
+
+    #header-Nav i {
+        font-size: 1.8em;
+        color: #FFA500;
+        transition: all .5s;
+    }
+
+    .headingSecondShape {
+        right: -82px;
+        transition: all .5s;
+    }
+
+    #heading1 {
+        left: 73px;
+        transition: all .5s;
+    }
+
+    /*home section*/
+    main > section:first-child > section:first-child > div:first-child {
+        width: 888px;
+        gap: 16px;
+        transition: all 2s;
+    }
+
+    main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
+        width: 360px;
+        height: 397px;
+        transition: all 2s;
+    }
+
+    main > section:first-child > section:first-child > div:first-child {
+        width: 756px;
+        flex-direction: column-reverse;
+        margin-top: 0;
+        gap: 0;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) {
+        margin-bottom: 44px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav {
+        justify-content: center;
+        transition: all 2s;
+    }
+}
+
+/*======================================== 845px ========================================*/
+@media (max-width: 845px) {
+    /*about section*/
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > p:nth-child(2), p:nth-child(3) {
+        font-size: 14px;
+        transition: all .5s;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p {
+        font-size: 14px;
+        transition: all .5s;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p {
+        font-size: 14px;
+        transition: all .5s;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) {
+        margin-left: 10px;
+        margin-right: 10px;
+        transition: all .5s;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child {
+        width: 177px;
+        height: 34px;
+        font-size: 14px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child > div {
+        width: 29px;
+        height: 30px;
+        left: 145px;
+        top: 2px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child > div:first-child > i:first-child {
+        left: 27%;
+        top: 27%;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) {
+        margin-top: 60px;
+        transition: all .5s;
+    }
+
+    main > section:nth-child(2) > div:nth-child(2) > img:first-child {
+        width: 127px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(2) > div:nth-child(7) > img:first-child {
+        width: 127px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > div:first-child > img:first-child {
+        width: 289px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > h2:first-child {
+        font-size: 33px;
+        line-height: 41px;
+        margin-bottom: 18px;
+        transition: all 2s;
+    }
+
+    #aboutWave {
+        width: 269px;
+        top: 537px;
+        transition: all 2s;
+    }
+
+    #aboutWave {
+        width: 269px;
+        height: 64px;
+        top: 537px;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(2) > section:nth-child(3) > div:first-child {
+        gap: 77px;
+        transition: all .5s;
+    }
+
+    #aboutLineCircle {
+        width: 86px;
+        height: 111px;
+        bottom: 31px;
+        transition: all 2s;
+    }
+
+    /*services section*/
+    main > section:nth-child(3) > section:nth-child(2) > section > div {
+        width: 99%;
+        transition: all 2s;
+    }
+
+    main > section:nth-child(3) > div:nth-child(3) {
+        top: 2346px;
+        transition: all 2s;
+    }
+
+    /*project section*/
+    .card {
+        width: 592px;
+    }
+
+    .card-thumb img {
+        height: 50%;
+    }
+
+    .card_detail {
+        height: 250px;
+    }
+}
+
+/*======================================== 822px ========================================*/
+@media (max-width: 882px) {
+    /*contact section*/
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div {
+        width: 564px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) {
+        margin-top: 45px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > i:first-child {
+        font-size: 1.3em;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > h4:nth-child(2) {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > p:nth-child(3) {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) {
+        margin-top: 45px;
+    }
+}
+
 /*======================================== 768px ========================================*/
 @media (max-width: 768px) {
     main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav {
@@ -170,6 +578,31 @@
 
     main > section:nth-child(5) > section:nth-child(2) > section:first-child > div:nth-child(8) {
         display: none;
+    }
+}
+
+/*======================================== 724px ========================================*/
+@media (max-width: 724px) {
+    /*project section*/
+    .card {
+        width: 359px;
+    }
+
+    .card_detail {
+        height: 228px;
+    }
+
+    .card_detail::before {
+        top: -168px;
+    }
+
+    .card_detail h4 {
+        margin: 15px 40px 15px;
+        font-size: 21px;
+    }
+
+    .card_detail p {
+        font-size: 13px;
     }
 }
 
@@ -357,6 +790,14 @@
 
     main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(7) {
         display: block;
+    }
+}
+
+/*======================================== 567px ========================================*/
+@media (max-width: 567px) {
+    /*skills section*/
+    #skillHeadings {
+        gap: 128px;
     }
 }
 
