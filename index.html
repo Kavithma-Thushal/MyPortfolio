@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="assets/styles/contacts.css">
     <link rel="stylesheet" href="assets/styles/footer.css">
     <link rel="stylesheet" href="assets/styles/responsive.css">
+
+    <link rel="stylesheet" href="assets/styles/swipper/swiper.min.css">
+    <link rel="stylesheet" href="assets/styles/swipper/style.css">
 </head>
 
 <body>
@@ -287,10 +290,112 @@
         <div></div>
 
         <!--education qualification -->
-        <section>
-            <div>
-                <img src="">
-            </div>
+        <section id="Achievements">
+            <article> <!--Header Paragraph sectioning -->
+                <h4>Certificate</h4>
+                <h1><span>My</span> Achievements</h1>
+
+                <!--Underline Header-->
+                <div></div>
+                <div></div>
+            </article>
+
+            <section> <!--Image sectioning  -->
+                <!--<div id="images">
+                    <img alt="Image" src="assets/styles/img/images/Achievement_Main.jpg">
+                    <img alt="Image" src="assets/styles/img/vector/svg/Achievement_Main.svg">
+                    <img alt="Image" src="assets/styles/img/vector/svg/Achievement_Star1.svg">
+                    <img alt="Image" src="assets/styles/img/vector/svg/Achievement_Star2.svg">
+                </div>-->
+
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                             style="background-image:url(assets/img/certificates/Web_Design_Moratuwa.png)">
+                            <div class="info">
+                                <h5>University of Moratuwa<br> <span>Web Design For Beginners</span></h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image:url(assets/img/certificates/Python_for_Beginners_Moratuwa.png)">
+                            <div class="info">
+                                <h5>University of Moratuwa<br> <span>Python For Beginners</span></h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image:url(assets/img/certificates/Java_Introduction_Sololearn.jpg)">
+                            <div class="info">
+                                <h5>Sololearn<br> <span>Java Introduction</span></h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image:url(assets/img/certificates/Java_Intermediate_Sololearn.jpg)">
+                            <div class="info">
+                                <h5>Sololearn<br> <span>Java Intermediate</span></h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image:url(assets/img/certificates/SQL_Introduction_Sololearn.jpg)">
+                            <div class="info">
+                                <h5>Sololearn<br> <span>SQL Introduction</span></h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image:url(assets/img/certificates/SQL_Intermediate_Sololearn.jpg)">
+                            <div class="info">
+                                <h5>Sololearn<br> <span>SQL Intermediate</span></h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image:url(assets/img/certificates/HTML_Introduction_Sololearn.jpg)">
+                            <div class="info">
+                                <h5>Sololearn<br> <span>HTML Introduction</span></h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image:url(assets/img/certificates/CSS_Introduction_Sololearn.jpg)">
+                            <div class="info">
+                                <h5>Sololearn<br> <span>CSS Introduction</span></h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image:url(assets/img/certificates/Python_Introduction_Sololearn.jpg)">
+                            <div class="info">
+                                <h5>Sololearn<br> <span>Python Introduction</span></h5>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             style="background-image:url(assets/img/certificates/Tech_for_Everyone_Sololearn.jpg)">
+                            <div class="info">
+                                <h5>Sololearn<br> <span>Tech for Everyone</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <!--<div class="swiper-pagination"></div>-->
+                </div>
+
+                <script src="assets/styles/swipper/swiper.min.js"></script>
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        effect: 'coverflow',
+                        grabCursor: true,
+                        centeredSlides: true,
+                        slidesPerView: 'auto',
+                        coverflowEffect: {
+                            rotate: 10,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 5,
+                            slideShadows: true,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+                    });
+                </script>
+            </section>
         </section>
         <div></div>
 
@@ -695,7 +800,7 @@
     <section><small>© 2023 All Right Reserved Designed By Kavithma Thushal</small></section>
 </footer>
 
-<script src="assets/loader/jquery-3.7.1.js"></script>
+<script src="assets/js/jquery-3.7.1.js"></script>
 <script>
     $(window).on('load', function () {
         // $("#loader").css('display','none');
