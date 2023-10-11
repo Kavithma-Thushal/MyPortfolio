@@ -200,7 +200,7 @@ main > section:nth-child(6) > section:nth-child(2) {
 .card_detail h4 {
     font-size: 25px;
     font-family: 'Ubuntu', sans-serif;
-    color: #444;
+    color: black;
     margin: 1px 50px 15px;
     transition: .5s;
 }
@@ -211,7 +211,7 @@ main > section:nth-child(6) > section:nth-child(2) {
 .card_detail p {
     font-family: 'Poppins';
     font-size: 15px;
-    color: #666;
+    color: black;
     line-height: 1.5;
     transition: .5s;
     margin: 0 20px 20px;
@@ -221,7 +221,8 @@ main > section:nth-child(6) > section:nth-child(2) {
 * customized icon project section
 */
 .card_detail a {
-    font-size: 27px;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
     color: dodgerblue;
     transition: .5s;
 }
