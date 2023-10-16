@@ -167,6 +167,6 @@ main > section:nth-child(3) > section:nth-child(2) > section:first-child > div:h
     transition: all 0.7s ease;
     -webkit-transform: scale(0.97);
     transform: scale(0.97);
-    box-shadow: 0 0 10px 10px dodgerblue;
+    box-shadow: 0 0 5px 5px dodgerblue;
     cursor: pointer;
 }

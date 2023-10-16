@@ -98,7 +98,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 24px;
-    color: white !important;
+    color: white /*!important*/;
     margin-top: 0;
 }
 
@@ -148,7 +148,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p {
     font-family: Poppins;
     font-size: 17px;
-    color: white !important;
+    color: white;
 }
 
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p > i:first-child {
@@ -161,7 +161,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
 * my details column 1 span customized about section
 */
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p > span {
-    color: white !important;
+    color: white;
 }
 
 /**
@@ -170,7 +170,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p {
     font-family: Poppins;
     font-size: 17px;
-    color: white !important;
+    color: white;
 }
 
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p > i:first-child {
@@ -191,7 +191,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
 * my details column 2 span customized about section
 */
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p > span {
-    color: white !important;
+    color: white;
 }
 
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) {
@@ -207,7 +207,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
     width: 209px;
     height: 46px;
     background-color: dodgerblue;
-    box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.36);
+    /*box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.36);*/
     border-radius: 10px;
     font-family: 'Ubuntu', SansSerif;
     text-align: center;
