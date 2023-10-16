@@ -348,6 +348,12 @@
         justify-content: center;
         transition: all 2s;
     }
+
+    .theme-checkbox {
+        --toggle-size: 7px;
+        top: -33px;
+        left: 320px;
+    }
 }
 
 /*======================================== 845px ========================================*/
@@ -1186,5 +1192,11 @@
 
     .menu {
         display: none;
+    }
+
+    .theme-checkbox {
+        --toggle-size: 7px;
+        top: -33px;
+        left: 262px;
     }
 }
