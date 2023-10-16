@@ -50,6 +50,7 @@
             <!--<div class="headingFirstShape"></div>-->
             <span id="heading1">Portfo<span id="heading2">lio</span></span>
         </aside>
+        <input type="checkbox" class="theme-checkbox">
         <nav class="menu">
             <ul>
                 <li><a class="active-hover-line" href="#home" id="active">HOME</a></li>
@@ -501,7 +502,8 @@
                     <div class="row">
                         <div class="card">
                             <div class="card-inner">
-                                <div class="card-thumb"><img src="assets/img/projects/Web-Development.jpg" alt="img" height="230px">
+                                <div class="card-thumb"><img src="assets/img/projects/Web-Development.jpg" alt="img"
+                                                             height="230px">
                                     <span><i class="fa-solid fa-code"></i></span>
                                 </div>
                                 <div class="card_detail">
@@ -799,14 +801,15 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 <script src="assets/js/jquery-3.7.1.js"></script>
+<script src="assets/js/dark_mode.js"></script>
 <script>
-    // loader
+    // Loader
     $(window).on('load', function () {
         // $("#loader").css('display','none');
         $("#loader").fadeOut(1000);
     });
 
-    // home typing
+    // Home Typing
     let typed = new Typed(".typing", {
         strings: ["", "Software Engineer", "FullStack Developer", "Competitive Programmer"],
         typeSpeed: 100,
