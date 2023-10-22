@@ -27,6 +27,7 @@ $('.theme-checkbox').click(function () {
         /*services*/
         $('main > section:nth-child(3)').css('background-color', '#ECF0F3');
         $('main > section:nth-child(3) > section:first-child > h1').css('color', 'black');
+        $('main > section:nth-child(3) > section:nth-child(2) > section > div').css('backgroundColor', 'white');
 
         /*skills*/
         $('main > section:nth-child(4)').css('background-color', '#ECF0F3');
