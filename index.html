@@ -809,8 +809,10 @@
 <script>
     // Loader
     $(window).on('load', function () {
-        // $("#loader").css('display','none');
         $("#loader").fadeOut(1000);
+        let style = document.createElement("style");
+        style.innerHTML = `body::-webkit-scrollbar {display: block;}`;
+        document.head.appendChild(style);
     });
 
     // Home Typing
