@@ -2,7 +2,6 @@ main > section:nth-child(6) {
     position: relative;
     top: 0;
     width: 100%;
-    background: black;
 }
 
 /**
