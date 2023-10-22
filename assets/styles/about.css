@@ -221,6 +221,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
     color: black;
     transform: scale(1.01);
     box-shadow: 0 0 15px 3px dodgerblue;
+    transition: all 0.5s ease;
 }
 
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child > div {

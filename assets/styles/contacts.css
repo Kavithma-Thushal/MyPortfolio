@@ -291,6 +291,7 @@ main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-c
     box-shadow: 0 0 15px 3px dodgerblue;
     cursor: pointer;
     color: black;
+    transition: all 0.5s ease;
 }
 
 main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button > div {
