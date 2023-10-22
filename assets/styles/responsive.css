@@ -350,7 +350,7 @@
     }
 
     .theme-checkbox {
-        --toggle-size: 7px;
+        --toggle-size: 5px;
         top: -33px;
         left: 320px;
     }
@@ -1195,8 +1195,8 @@
     }
 
     .theme-checkbox {
-        --toggle-size: 7px;
+        --toggle-size: 5px;
         top: -33px;
-        left: 262px;
+        left: 273px;
     }
 }
