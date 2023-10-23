@@ -1,6 +1,3 @@
-/**
- * Class declarations
- */
 class customer {
     constructor(id, name, address, salary) {
         this.id = id;

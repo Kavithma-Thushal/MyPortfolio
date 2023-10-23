@@ -1,6 +1,3 @@
-/**
- * Class declarations
- */
 class order {
     constructor(oId, cId, oDate, subTotal, discount) {
         this.oId = oId;

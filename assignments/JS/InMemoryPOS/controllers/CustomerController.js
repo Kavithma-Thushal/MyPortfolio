@@ -8,7 +8,8 @@ $("#btnCSave").click(function () {
         $("#txtCustomerId").val(),
         $("#txtCustomerName").val(),
         $("#txtCustomerAddress").val(),
-        $("#txtCustomerSalary").val());
+        $("#txtCustomerSalary").val()
+    );
 
     clearTextFieldsC();
 
@@ -23,8 +24,12 @@ $("#btnCSave").click(function () {
 });
 
 /**
- * Clear Text Fields (Method)
+ * Clear Text Fields in +New Customer
  * */
+$("#btnClearC").click(function () {
+    clearTextFieldsC();
+});
+
 function clearTextFieldsC() {
     txtCustomerId.value = '';
     txtCustomerName.value = '';
@@ -35,18 +40,149 @@ function clearTextFieldsC() {
 }
 
 /**
- * Generate New Customer ID
+ * Search Customer
  * */
-function generateCustomerID() {
-    if (customers.length > 0) {
-        let lastId = customers[customers.length - 1].id;
-        let digit = lastId.substring(6);
-        let number = parseInt(digit) + 1;
-        return lastId.replace(digit, number);
+$("#btnSearchCus").click(function () {
+    var result = customers.find(({id}) => id === $("#searchCusId").val());
+    console.log(result);
+
+    if (result != null) {
+        $("#customerTable").empty();
+        var row = `<tr><td>${result.id}</td><td>${result.name}</td><td>${result.address}</td><td>${result.salary}</td></tr>`;
+        $("#customerTable").append(row);
+
+        $("#searchCustomerId").val(result.id);
+        $("#nameUpdate").val(result.name);
+        $("#addressUpdate").val(result.address);
+        $("#salaryUpdate").val(result.salary);
+
+        $("#searchCIdDelete").val(result.id);
+        $("#disabledNameDelete").val(result.name);
+        $("#disabledAddressDelete").val(result.address);
+        $("#disabledSalaryDelete").val(result.salary);
+
     } else {
-        return "C00-001";
+        emptyMassage();
+        clearCDTextFields();
+    }
+});
+
+/**
+ * Clear Input Field in Search Bar
+ * */
+$("#clearSearchCus").click(function () {
+    searchCusId.value = '';
+    clearCDTextFields();
+    clearCUTextFields();
+    loadAllCustomers();
+});
+
+/**
+ * Auto Forces Input Field in Search Bar
+ * */
+$('#searchCusId').keypress(function (event) {
+    if (event.which === 13) {
+        $('#btnSearchCus').focus();
+    }
+});
+$('#btnSearchCus').keypress(function (event) {
+    if (event.which === 13) {
+        $('#searchCusId').focus();
+    }
+});
+
+/**
+ * Update Customer
+ * */
+$("#bntUpdateCustomer").click(function () {
+    let CustomerId = $("#searchCustomerId").val();
+    let response2 = updateCustomers(CustomerId);
+    if (response2) {
+        saveUpdateAlert(CustomerId, "updated.");
+        clearCUTextFields();
+        checkValidity(customerValidationsUpdate);
+    } else {
+        unSucsessUpdateAlert(CustomerId);
+    }
+});
+
+function updateCustomers(CustomerId) {
+    let customer = searchCustomer(CustomerId);
+    if (customer != null) {
+        customer.id = $("#searchCustomerId").val();
+        customer.name = $("#nameUpdate").val();
+        customer.address = $("#addressUpdate").val();
+        customer.salary = $("#salaryUpdate").val();
+        loadAllCustomers();
+        return true;
+    } else {
+        return false;
     }
 }
+
+/**
+ * Clear Text Fields in Update Customer
+ * */
+$("#btnUclearC").click(function () {
+    clearCUTextFields();
+});
+
+function clearCUTextFields() {
+    searchCustomerId.value = '';
+    nameUpdate.value = '';
+    addressUpdate.value = '';
+    salaryUpdate.value = '';
+}
+
+/**
+ * Delete Customer
+ * */
+$("#btnDeleteCustomer").click(function () {
+    let deleteID = $("#searchCIdDelete").val();
+
+    yesNoAlertDelete(deleteID);
+});
+
+/**
+ * Search Id Enter Pressed And Load TextFields
+ * */
+$("#searchCIdDelete").keyup(function (event) {
+    if (event.keyCode === 13) {
+        var result = customers.find(({id}) => id === $("#searchCIdDelete").val());
+        console.log(result);
+
+        if (result != null) {
+            $("#searchCIdDelete").val(result.id);
+            $("#disabledNameDelete").val(result.name);
+            $("#disabledAddressDelete").val(result.address);
+            $("#disabledSalaryDelete").val(result.salary);
+        } else {
+            emptyMassage();
+            clearCDTextFields();
+        }
+    }
+});
+
+/**
+ * Clear Text Fields in Delete Customer
+ * */
+$("#btnDclearC").click(function () {
+    clearCDTextFields();
+});
+
+function clearCDTextFields() {
+    searchCIdDelete.value = '';
+    disabledNameDelete.value = '';
+    disabledAddressDelete.value = '';
+    disabledSalaryDelete.value = '';
+}
+
+/**
+ * View All Customers
+ * */
+$("#btnViewAllCustomer").click(function () {
+    loadAllCustomers();
+});
 
 /**
  * Load All Customers
@@ -70,37 +206,6 @@ function loadAllCustomers() {
     dblRowClickEventsCus();
     loadAllCustomersForOption();
 }
-
-/**
- * Input Fields warnings in +New Customer
- * */
-$("#txtCustomerId").focus();
-const regExCusID = /^(C00-)[0-9]{3,4}$/;
-const regExCusName = /^[A-z ]{3,20}$/;
-const regExCusAddress = /^[A-z0-9/ ]{4,30}$/;
-const regExSalary = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
-
-let customerValidations = [];
-customerValidations.push({
-    reg: regExCusID,
-    field: $('#txtCustomerId'),
-    error: 'Customer ID Pattern is Wrong : C00-001'
-});
-customerValidations.push({
-    reg: regExCusName,
-    field: $('#txtCustomerName'),
-    error: 'Customer Name Pattern is Wrong : A-z 3-20'
-});
-customerValidations.push({
-    reg: regExCusAddress,
-    field: $('#txtCustomerAddress'),
-    error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'
-});
-customerValidations.push({
-    reg: regExSalary,
-    field: $('#txtCustomerSalary'),
-    error: 'Customer Salary Pattern is Wrong : 100 or 100.00'
-});
 
 /**
  * Table Listener Click & Load To TextFields
@@ -136,36 +241,49 @@ function dblRowClickEventsCus() {
 }
 
 /**
- * Clear Text Fields in +New Customer
+ * Generate New Customer ID
  * */
-$("#btnClearC").click(function () {
-    clearTextFieldsC();
-});
-
-/**
- * Update Customer
- * */
-$("#bntUpdateCustomer").click(function () {
-    let CustomerId = $("#searchCustomerId").val();
-    let response2 = updateCustomers(CustomerId);
-    if (response2) {
-        saveUpdateAlert(CustomerId, "updated.");
-        clearCUTextFields();
-        checkValidity(customerValidationsUpdate);
+function generateCustomerID() {
+    if (customers.length > 0) {
+        let lastId = customers[customers.length - 1].id;
+        let digit = lastId.substring(6);
+        let number = parseInt(digit) + 1;
+        return lastId.replace(digit, number);
     } else {
-        unSucsessUpdateAlert(CustomerId);
+        return "C00-001";
     }
-});
+}
 
 /**
- * Clear Text Fields in Update Customer (Method)
+ * Input Fields warnings in +New Customer
  * */
-function clearCUTextFields() {
-    searchCustomerId.value = '';
-    nameUpdate.value = '';
-    addressUpdate.value = '';
-    salaryUpdate.value = '';
-}
+$("#txtCustomerId").focus();
+const regExCusID = /^(C00-)[0-9]{3,4}$/;
+const regExCusName = /^[A-z ]{3,20}$/;
+const regExCusAddress = /^[A-z0-9/ ]{4,30}$/;
+const regExSalary = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+
+let customerValidations = [];
+customerValidations.push({
+    reg: regExCusID,
+    field: $('#txtCustomerId'),
+    error: 'Customer ID Pattern is Wrong : C00-001'
+});
+customerValidations.push({
+    reg: regExCusName,
+    field: $('#txtCustomerName'),
+    error: 'Customer Name Pattern is Wrong : A-z 3-20'
+});
+customerValidations.push({
+    reg: regExCusAddress,
+    field: $('#txtCustomerAddress'),
+    error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'
+});
+customerValidations.push({
+    reg: regExSalary,
+    field: $('#txtCustomerSalary'),
+    error: 'Customer Salary Pattern is Wrong : 100 or 100.00'
+});
 
 /**
  * Input Fields warnings in Update Customer
@@ -193,98 +311,8 @@ customerValidationsUpdate.push({
 });
 
 /**
- * Clear Text Fields in Update Customer
+ * Disable "Tab" Key in +New Customer
  * */
-$("#btnUclearC").click(function () {
-    clearCUTextFields();
-});
-
-/**
- * Delete Customer
- * */
-$("#btnDeleteCustomer").click(function () {
-    let deleteID = $("#searchCIdDelete").val();
-
-    yesNoAlertDelete(deleteID);
-});
-
-/**
- * Clear Text Fields in Delete Customer
- * */
-$("#btnDclearC").click(function () {
-    clearCDTextFields();
-});
-
-/**
- * Clear Text Fields in Delete Customer (Method)
- * */
-function clearCDTextFields() {
-    searchCIdDelete.value = '';
-    disabledNameDelete.value = '';
-    disabledAddressDelete.value = '';
-    disabledSalaryDelete.value = '';
-}
-
-/**
- * View All Customers
- * */
-$("#btnViewAllCustomer").click(function () {
-    loadAllCustomers();
-});
-
-/**
- * Search ID and Load To Table
- * */
-$("#btnSearchCus").click(function () {
-    var result = customers.find(({id}) => id === $("#searchCusId").val());
-    console.log(result);
-
-    if (result != null) {
-        $("#customerTable").empty();
-        var row = `<tr><td>${result.id}</td><td>${result.name}</td><td>${result.address}</td><td>${result.salary}</td></tr>`;
-        $("#customerTable").append(row);
-
-        $("#searchCustomerId").val(result.id);
-        $("#nameUpdate").val(result.name);
-        $("#addressUpdate").val(result.address);
-        $("#salaryUpdate").val(result.salary);
-
-        $("#searchCIdDelete").val(result.id);
-        $("#disabledNameDelete").val(result.name);
-        $("#disabledAddressDelete").val(result.address);
-        $("#disabledSalaryDelete").val(result.salary);
-
-    } else {
-        emptyMassage();
-        clearCDTextFields();
-    }
-});
-
-/**
- * Clear Input Field in Search Customer
- * */
-$("#clearSearchCus").click(function () {
-    searchCusId.value = '';
-    clearCDTextFields();
-    clearCUTextFields();
-    loadAllCustomers();
-});
-
-/**
- * Auto Forces Input Fields Search
- * */
-$('#searchCusId').keypress(function (event) {
-    if (event.which === 13) {
-        $('#btnSearchCus').focus();
-    }
-});
-$('#btnSearchCus').keypress(function (event) {
-    if (event.which === 13) {
-        $('#searchCusId').focus();
-    }
-});
-
-// Disable tab key of all four text fields using grouping selector in CSS
 $("#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('keydown', function (event) {
     if (event.key === "Tab") {
         event.preventDefault();
@@ -299,6 +327,9 @@ $("#txtCustomerId,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('
     checkValidity(customerValidations);
 });
 
+/**
+ * Enable "Enter" Key in +New Customer
+ * */
 $("#txtCustomerId").on('keydown', function (event) {
     if (event.key === "Enter" && check(regExCusID, $("#txtCustomerId"))) {
         $("#txtCustomerName").focus();
@@ -327,6 +358,9 @@ $("#txtCustomerSalary").on('keydown', function (event) {
     }
 });
 
+/**
+ * Disable Save Customer Button
+ * */
 function setButtonStateCS(value) {
     if (value > 0) {
         $("#btnCSave").attr('disabled', true);
@@ -335,7 +369,9 @@ function setButtonStateCS(value) {
     }
 }
 
-// Disable tab key of all four text fields using grouping selector in CSS
+/**
+ * Disable "Tab" Key in Update Customer
+ * */
 $("#searchCustomerId,#nameUpdate,#addressUpdate,#salaryUpdate").on('keydown', function (event) {
     if (event.key === "Tab") {
         event.preventDefault();
@@ -350,6 +386,9 @@ $("#searchCustomerId,#nameUpdate,#addressUpdate,#salaryUpdate").on('blur', funct
     checkValidity(customerValidationsUpdate);
 });
 
+/**
+ * Enable "Enter" Key in Update Customer
+ * */
 $("#searchCustomerId").on('keydown', function (event) {
     if (event.key === "Enter" && check(regExCusID, $("#searchCustomerId"))) {
         $("#nameUpdate").focus();
@@ -378,6 +417,9 @@ $("#salaryUpdate").on('keydown', function (event) {
     }
 });
 
+/**
+ * Disable Update Customer Button
+ * */
 function setButtonStateCU(value) {
     if (value > 0) {
         $("#bntUpdateCustomer").attr('disabled', true);
@@ -386,17 +428,13 @@ function setButtonStateCU(value) {
     }
 }
 
-/**
- * Update Methods
- * */
-function updateCustomers(CustomerId) {
-    let customer = searchCustomer(CustomerId);
+function deleteCustomer(customerID) {
+    let customer = searchCustomer(customerID);
     if (customer != null) {
-        customer.id = $("#searchCustomerId").val();
-        customer.name = $("#nameUpdate").val();
-        customer.address = $("#addressUpdate").val();
-        customer.salary = $("#salaryUpdate").val();
+        let indexNumber = customers.indexOf(customer);
+        customers.splice(indexNumber, 1);
         loadAllCustomers();
+        clearCDTextFields();
         return true;
     } else {
         return false;
@@ -410,42 +448,4 @@ function searchCustomer(cusId) {
         }
     }
     return null;
-}
-
-/**
- * Delete Model
- * */
-
-/**
- * Delete Model
- * Search id Enter Pressed And Load TextFields
- * */
-$("#searchCIdDelete").keyup(function (event) {
-    if (event.keyCode === 13) {
-        var result = customers.find(({id}) => id === $("#searchCIdDelete").val());
-        console.log(result);
-
-        if (result != null) {
-            $("#searchCIdDelete").val(result.id);
-            $("#disabledNameDelete").val(result.name);
-            $("#disabledAddressDelete").val(result.address);
-            $("#disabledSalaryDelete").val(result.salary);
-        } else {
-            emptyMassage();
-            clearCDTextFields();
-        }
-    }
-});
-
-function deleteCustomer(customerID) {
-    let customer = searchCustomer(customerID);
-    if (customer != null) {
-        let indexNumber = customers.indexOf(customer);
-        customers.splice(indexNumber, 1);
-        loadAllCustomers();
-        clearCDTextFields();
-        return true;
-    } else {
-        return false;
-    }
 }

@@ -19,20 +19,20 @@ function check(regex, txtField) {
     return regex.test(inputValue) ? true : false;
 }
 
-function setTextError(txtField, error) {
-    if (txtField.val().length <= 0) {
-        defaultText(txtField, "");
-    } else {
-        txtField.css('border', '2px solid red');
-        txtField.parent().children('span').text(error);
-    }
-}
-
 function textSuccess(txtField, error) {
     if (txtField.val().length <= 0) {
         defaultText(txtField, "");
     } else {
         txtField.css('border', '2px solid green');
+        txtField.parent().children('span').text(error);
+    }
+}
+
+function setTextError(txtField, error) {
+    if (txtField.val().length <= 0) {
+        defaultText(txtField, "");
+    } else {
+        txtField.css('border', '2px solid red');
         txtField.parent().children('span').text(error);
     }
 }

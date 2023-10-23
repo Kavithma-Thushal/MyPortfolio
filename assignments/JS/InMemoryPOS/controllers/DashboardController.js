@@ -1,58 +1,43 @@
 $(document).ready(function () {
-    $("#HomeSection").css('display', 'block');
-    $("#CustomerSection").css('display', 'none');
-    $("#ItemSection").css('display', 'none');
-    $("#OrderSection").css('display', 'none');
-    $("#OrderDetails").css('display', 'none');
-});
+    const hide_all_contents = function () {
+        $('#HomeSection').css('display', 'none');
+        $('#CustomerSection').css('display', 'none');
+        $('#ItemSection').css('display', 'none');
+        $('#OrderSection').css('display', 'none');
+        $('#OrderDetails').css('display', 'none');
+    };
 
-$("#homeBtn").click(function () {
-    $("#HomeSection").css('display', 'block');
-    $("#CustomerSection").css('display', 'none');
-    $("#ItemSection").css('display', 'none');
-    $("#OrderSection").css('display', 'none');
-    $("#OrderDetails").css('display', 'none');
-});
+    hide_all_contents();
+    $('#HomeSection').css('display', 'block');
 
-$("#customerBtn").click(function () {
-    $("#HomeSection").css('display', 'none');
-    $("#CustomerSection").css('display', 'block');
-    $("#ItemSection").css('display', 'none');
-    $("#OrderSection").css('display', 'none');
-    $("#OrderDetails").css('display', 'none');
+    $('#homeBtn').click(function () {
+        hide_all_contents();
+        $('#HomeSection').css('display', 'block');
+    });
 
-    $("#txtCustomerId").val(generateCustomerID());
-});
+    $('#customerBtn').click(function () {
+        hide_all_contents();
+        $('#CustomerSection').css('display', 'block');
+        $("#txtCustomerId").val(generateCustomerID());
+    });
 
-$("#itemBtn").click(function () {
-    $("#HomeSection").css('display', 'none');
-    $("#CustomerSection").css('display', 'none');
-    $("#ItemSection").css('display', 'block');
-    $("#OrderSection").css('display', 'none');
-    $("#OrderDetails").css('display', 'none');
+    $('#itemBtn').click(function () {
+        hide_all_contents();
+        $('#ItemSection').css('display', 'block');
+        $("#txtItemsId").val(generateItemID());
+    });
 
-    $("#txtItemsId").val(generateItemID());
+    $('#orderBtn').click(function () {
+        hide_all_contents();
+        $('#OrderSection').css('display', 'block');
+        $("#orderId").val(generateOrderID());
+        setCurrentDate();
+    });
 
-});
-
-$("#orderBtn").click(function () {
-    $("#HomeSection").css('display', 'none');
-    $("#CustomerSection").css('display', 'none');
-    $("#ItemSection").css('display', 'none');
-    $("#OrderSection").css('display', 'block');
-    $("#OrderDetails").css('display', 'none');
-
-    $("#orderId").val(generateOrderID());
-    setCurrentDate();
-});
-
-$("#orderDetailsBtn").click(function () {
-    $("#HomeSection").css('display', 'none');
-    $("#CustomerSection").css('display', 'none');
-    $("#ItemSection").css('display', 'none');
-    $("#OrderSection").css('display', 'none');
-    $("#OrderDetails").css('display', 'block');
-
-    loadAllOrders();
-    loadAllOrderDetails();
+    $('#orderDetailsBtn').click(function () {
+        hide_all_contents();
+        $('#OrderDetails').css('display', 'block');
+        loadAllOrders();
+        loadAllOrderDetails();
+    });
 });

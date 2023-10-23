@@ -1,13 +1,11 @@
-$("#btnPurchase").attr('disabled', true);
-$("#btnAddToCart").attr('disabled', true);
-
 /**
- * Invoice Details
+ * Disable Buttons
  * */
+$("#btnAddToCart").attr('disabled', true);
+$("#btnPurchase").attr('disabled', true);
 
 /**
- * Invoice Details
- * Order ID
+ * Generate New Order ID
  * */
 function generateOrderID() {
     if (orders.length > 0) {
@@ -21,8 +19,7 @@ function generateOrderID() {
 }
 
 /**
- * Invoice Details
- * Order Date
+ * Add Order Date
  * */
 function setCurrentDate() {
     let orderDate = $("#orderDate");
@@ -35,8 +32,7 @@ function setCurrentDate() {
 }
 
 /**
- * Invoice Details
- * Customer Select Combo
+ * Load All Customers
  * */
 function loadAllCustomersForOption() {
     $("#cmbCustomerId").empty();
@@ -45,6 +41,9 @@ function loadAllCustomersForOption() {
     }
 }
 
+/**
+ * Customers Combo Box
+ * */
 $("#cmbCustomerId").click(function () {
     let rCmbC = customers.find(({id}) => id === $("#cmbCustomerId").val());
     $("#customerName").val(rCmbC.name);
@@ -52,11 +51,40 @@ $("#cmbCustomerId").click(function () {
     $("#customerSalary").val(rCmbC.salary);
 });
 
+/**
+ * Load All Items
+ * */
+function loadAllItemsForOption() {
+    $("#cmbItemCode").empty();
+    for (let item of items) {
+        $("#cmbItemCode").append(`<option>${item.code}</option>`);
+    }
+}
 
 /**
- * Items Details
+ * Items Combo Box
  * */
+$("#cmbItemCode").click(function () {
+    let rCmbI = items.find(({code}) => code === $("#cmbItemCode").val());
+    $("#itemName").val(rCmbI.name);
+    $("#itemPrice").val(rCmbI.price);
+    $("#qtyOnHand").val(rCmbI.qty);
+});
 
+/**
+ * Clear All
+ * */
+$("#btnClearAll").click(function () {
+    clearDetails();
+});
+
+function clearDetails() {
+    $('#cmbCustomerId,#customerName,#customerAddress,#customerSalary,#cmbItemCode,#itemName,#itemPrice,#qtyOnHand,#buyQty,#txtDiscount,#txtTotal,#txtDiscount,#txtSubTotal,#txtCash,#txtBalance').val("");
+}
+
+/**
+ * Item Details
+ * */
 let itemCode;
 let itemName;
 let itemPrice;
@@ -68,37 +96,15 @@ let discount = 0;
 let subTotal = 0;
 
 /**
- * Items Details
- * Item Select Combo
+ * Add To Cart
  * */
-function loadAllItemsForOption() {
-    $("#cmbItemCode").empty();
-    for (let item of items) {
-        $("#cmbItemCode").append(`<option>${item.code}</option>`);
-    }
-}
-
-$("#cmbItemCode").click(function () {
-    let rCmbI = items.find(({code}) => code === $("#cmbItemCode").val());
-    $("#itemName").val(rCmbI.name);
-    $("#itemPrice").val(rCmbI.price);
-    $("#qtyOnHand").val(rCmbI.qty);
-});
-
-/**
- * Logics
- * Place order
- * */
-
 let tableRow = [];
-
 $("#btnAddToCart").click(function () {
     let duplicate = false;
 
     for (let i = 0; i < $("#tblAddToCart tr").length; i++) {
         if ($("#cmbItemCode option:selected").text() === $("#tblAddToCart tr").children(':nth-child(1)')[i].innerText) {
             duplicate = true;
-
         }
     }
     if (duplicate !== true) {
@@ -118,12 +124,9 @@ $("#btnAddToCart").click(function () {
     }
 
     /**
-     * Logics
-     * Place order
-     * Table Add logic
+     * Add To Table
      * */
     $("#tblAddToCart>tr").click('click', function () {
-
         tableRow = $(this);
         let itemCode = $(this).children(":eq(0)").text();
         let itemName = $(this).children(":eq(1)").text();
@@ -136,14 +139,29 @@ $("#btnAddToCart").click(function () {
         $("#itemPrice").val(unitPrice);
         $("#buyQty").val(qty);
         $("#txtTotal").val(total);
-
     });
 });
 
 /**
- * Logics
- * Place order
- * Table Load
+ * Reduce QtyOnHand
+ * */
+function reduceQty(orderQty) {
+    let minQty = parseInt(orderQty);
+    let reduceQty = parseInt($("#qtyOnHand").val());
+    reduceQty = reduceQty - minQty;
+    $("#qtyOnHand").val(reduceQty);
+}
+
+/**
+ * Calculate Total
+ * */
+function calcTotal(amount) {
+    total += amount;
+    $("#txtTotal").val(total);
+}
+
+/**
+ * Add To Table
  * */
 $("#tblAddToCart").empty();
 
@@ -158,36 +176,10 @@ function loadCartTableDetail() {
     let row = `<tr><td>${itemCode}</td><td>${itemName}</td><td>${itemPrice}</td><td>${itemOrderQty}</td><td>${total}</td></tr>`;
 
     $("#tblAddToCart").append(row);
-
 }
 
 /**
- * Logics
- * Place order
- * Reduce QtyOnHand
- * */
-function reduceQty(orderQty) {
-    let minQty = parseInt(orderQty);
-    let reduceQty = parseInt($("#qtyOnHand").val());
-    reduceQty = reduceQty - minQty;
-    $("#qtyOnHand").val(reduceQty);
-}
-
-/**
- * Logics
- * Place order
- * Calculate Total
- * */
-
-function calcTotal(amount) {
-    total += amount;
-    $("#txtTotal").val(total);
-}
-
-/**
- * Logics
- * Place order
- * Manage Available Qty
+ * Manage QtyOnHand
  * */
 function manageQtyOnHand(preQty, nowQty) {
     var preQty = parseInt(preQty);
@@ -196,170 +188,20 @@ function manageQtyOnHand(preQty, nowQty) {
 
     avaQty = avaQty + preQty;
     avaQty = avaQty - nowQty;
-
     $("#qtyOnHand").val(avaQty);
 }
 
-
 /**
- * Logics
- * Place order
  * Manage Total
  * */
-
 function manageTotal(preTotal, nowTotal) {
     total -= preTotal;
     total += nowTotal;
-
     $("#txtTotal").val(total);
 }
 
 /**
- * Logics
- * Place order
- * Enter Discount and sub Total display
- * */
-
-$(document).on("change keyup blur", "#txtDiscount", function () {
-    discount = $("#txtDiscount").val();
-    discount = (total / 100) * discount;
-    subTotal = total - discount;
-
-    $("#txtSubTotal").val(subTotal);
-});
-
-
-/**
- * Logics
- * Place order
- * Enter Cash and Balance display
- * */
-
-$(document).on("change keyup blur", "#txtCash", function () {
-    let cash = $("#txtCash").val();
-    let balance = cash - subTotal;
-    $("#txtBalance").val(balance);
-    if (balance < 0) {
-        $("#lblCheckSubtotal").parent().children('strong').text(balance + " : plz enter valid Balance");
-        $("#btnPurchase").attr('disabled', true);
-    } else {
-        $("#lblCheckSubtotal").parent().children('strong').text("");
-        $("#btnPurchase").attr('disabled', false);
-    }
-});
-
-/**
- * Logics
- * Place order
- * placeOrder to Order Array
- * method
- * */
-function placeOrder() {
-    //create object
-    let orderArrayList = new order(
-        $("#orderId").val(),
-        $("#cmbCustomerId").val(),
-        $("#orderDate").val(),
-        $("#txtSubTotal").val(),
-        $("#txtDiscount").val()
-    );
-
-    orders.push(orderArrayList);
-    console.log(orderArrayList);
-
-    saveUpdateAlert("Place Ordering", "Successfully.");
-}
-
-/**
- * Logics
- * Place order
- * placeOrder to Order Details Array
- * method
- * */
-function pushOrderDetails() {
-    for (let i = 0; i < $("#tblAddToCart tr").length; i++) {
-        let orderId = $("#orderId").val();
-        let cusId = $("#cmbCustomerId").val();
-        let itemId = $("#tblAddToCart tr").children(':nth-child(1)')[i].innerText;
-        let qty = $("#tblAddToCart tr").children(':nth-child(4)')[i].innerText;
-        let total = $("#tblAddToCart tr").children(':nth-child(5)')[i].innerText;
-
-        let orderDetailArrayList = new orderDetail(orderId, cusId, itemId, qty, total);
-
-        orderDetails.push(orderDetailArrayList);
-        console.log(orderDetailArrayList);
-    }
-}
-
-/**
- * Logics
- * Place order
- * Purchase Order button
- * */
-
-$("#btnPurchase").click(function () {
-    placeOrder();
-    pushOrderDetails();
-    $("#orderId").val(generateOrderID());
-    clearDetails();
-    $("#tblAddToCart").empty();
-
-});
-
-/**
- * Logics
- * Place order
- * Clear Method
- * */
-function clearDetails() {
-    $('#cmbCustomerId,#customerName,#customerAddress,#customerSalary,#cmbItemCode,#itemName,#itemPrice,#qtyOnHand,#buyQty,#txtDiscount,#txtTotal,#txtDiscount,#txtSubTotal,#txtCash,#txtBalance').val("");
-
-}
-
-/**
- * Logics
- * Place order
- * Clear Button
- * */
-$("#btnClearAll").click(function () {
-    clearDetails();
-});
-
-/**
- * Logics
- * Place order
- * Remove Row
- * */
-
-$("#tblAddToCart").dblclick(function () {
-    Swal.fire({
-        title: 'Do you want to Delete the Select row?',
-        showDenyButton: true,
-        showCancelButton: true,
-        confirmButtonText: 'Yes',
-        denyButtonText: 'No',
-        customClass: {
-            actions: 'my-actions',
-            cancelButton: 'order-1 right-gap',
-            confirmButton: 'order-2',
-            denyButton: 'order-3',
-        }
-    }).then((result) => {
-        if (result.isConfirmed) {
-            $(this).children('tr').eq(0).remove();
-            Swal.fire('Delete!', '', 'success')
-        } else if (result.isDenied) {
-            Swal.fire('Select row are not Delete', '', 'info')
-        }
-    })
-
-});
-
-
-/**
- * Logics
- * Place order
- * Update Items in buy Qty
+ * Update QtyOnHand
  * */
 $("#btnAddToCart").click(function () {
     let itemIdQ = $("#cmbItemCode").val();
@@ -389,11 +231,49 @@ function searchItemQty(itemIdQ) {
 }
 
 /**
- * Logics
- * Place order
- * Enter BuyQty and Check Qty On Hand
+ * Purchase Order
  * */
+$("#btnPurchase").click(function () {
+    placeOrder();
+    pushOrderDetails();
+    $("#orderId").val(generateOrderID());
+    clearDetails();
+    $("#tblAddToCart").empty();
+});
 
+/**
+ * PlaceOrder to Order Array
+ * */
+function placeOrder() {
+    //create object
+    let orderArrayList = new order($("#orderId").val(), $("#cmbCustomerId").val(), $("#orderDate").val(), $("#txtSubTotal").val(), $("#txtDiscount").val());
+
+    orders.push(orderArrayList);
+    console.log(orderArrayList);
+    saveUpdateAlert("Place Ordering", "Successfully.");
+}
+
+/**
+ * PlaceOrder to OrderDetails Array
+ * */
+function pushOrderDetails() {
+    for (let i = 0; i < $("#tblAddToCart tr").length; i++) {
+        let orderId = $("#orderId").val();
+        let cusId = $("#cmbCustomerId").val();
+        let itemId = $("#tblAddToCart tr").children(':nth-child(1)')[i].innerText;
+        let qty = $("#tblAddToCart tr").children(':nth-child(4)')[i].innerText;
+        let total = $("#tblAddToCart tr").children(':nth-child(5)')[i].innerText;
+
+        let orderDetailArrayList = new orderDetail(orderId, cusId, itemId, qty, total);
+
+        orderDetails.push(orderDetailArrayList);
+        console.log(orderDetailArrayList);
+    }
+}
+
+/**
+ * Enter Buy Qty and Check Qty On Hand
+ * */
 $(document).on("change keyup blur", "#buyQty", function () {
     let qtyOnHand = $("#qtyOnHand").val();
     let buyQty = $("#buyQty").val();
@@ -405,4 +285,54 @@ $(document).on("change keyup blur", "#buyQty", function () {
         $("#lblCheckQty").parent().children('strong').text("");
         $("#btnAddToCart").attr('disabled', false);
     }
+});
+
+/**
+ * Enter Discount & Sub Total
+ * */
+$(document).on("change keyup blur", "#txtDiscount", function () {
+    discount = $("#txtDiscount").val();
+    discount = (total / 100) * discount;
+    subTotal = total - discount;
+
+    $("#txtSubTotal").val(subTotal);
+});
+
+/**
+ * Enter Cash and Display Balance
+ * */
+$(document).on("change keyup blur", "#txtCash", function () {
+    let cash = $("#txtCash").val();
+    let balance = cash - subTotal;
+    $("#txtBalance").val(balance);
+    if (balance < 0) {
+        $("#lblCheckSubtotal").parent().children('strong').text(balance + " : plz enter valid Balance");
+        $("#btnPurchase").attr('disabled', true);
+    } else {
+        $("#lblCheckSubtotal").parent().children('strong').text("");
+        $("#btnPurchase").attr('disabled', false);
+    }
+});
+
+/**
+ * Remove Row
+ * */
+$("#tblAddToCart").dblclick(function () {
+    Swal.fire({
+        title: 'Do you want to Delete the Select row?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        denyButtonText: 'No',
+        customClass: {
+            actions: 'my-actions', cancelButton: 'order-1 right-gap', confirmButton: 'order-2', denyButton: 'order-3',
+        }
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $(this).children('tr').eq(0).remove();
+            Swal.fire('Delete!', '', 'success')
+        } else if (result.isDenied) {
+            Swal.fire('Select row are not Delete', '', 'info')
+        }
+    })
 });

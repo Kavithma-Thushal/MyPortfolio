@@ -1,6 +1,3 @@
-/**
- * Class declarations
- */
 class orderDetail {
     constructor(orderId, cusId, itemId, qty, total) {
         this.orderId = orderId;
