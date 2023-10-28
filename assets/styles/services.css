@@ -55,12 +55,12 @@ main > section:nth-child(3) > section:nth-child(2) {
 }
 
 main > section:nth-child(3) > section:nth-child(2) > section {
-    width: 1095px;
+    width: 2000px;
     display: flex;
     flex-wrap: wrap;
     gap: 66px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     z-index: 2;
     transition: all 2s;
 }
