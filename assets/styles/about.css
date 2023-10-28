@@ -4,36 +4,21 @@ main > section:nth-child(2) {
     width: 100%;
 }
 
-/**
-* title in about section
-*/
-main > section:nth-child(2) > section:first-child {
+main > section:nth-child(2) > section:nth-child(1) {
     position: relative;
     text-align: center;
-    padding-top: 68px;
 }
 
-main > section:nth-child(2) > section:first-child > h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: initial;
-    font-size: 25px;
-    color: dodgerblue !important;
-    text-align: center;
-    padding-top: 12px;
-    margin: 0;
-}
-
-main > section:nth-child(2) > section:first-child > h1 {
-    font-family: Ubuntu, sans-serif;
+main > section:nth-child(2) > section:nth-child(1) > h1 {
+    font-family: Ubuntu;
     font-size: 50px;
     text-align: center;
-    margin-top: 5px;
     margin-bottom: 7px;
     padding-bottom: 18px;
     color: white;
 }
 
-main > section:nth-child(2) > section:first-child > h1::before {
+main > section:nth-child(2) > section:nth-child(1) > h1::before {
     content: "";
     position: absolute;
     display: block;
@@ -45,7 +30,7 @@ main > section:nth-child(2) > section:first-child > h1::before {
     border-radius: 2px;
 }
 
-main > section:nth-child(2) > section:first-child > h1::after {
+main > section:nth-child(2) > section:nth-child(1) > h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -54,197 +39,10 @@ main > section:nth-child(2) > section:first-child > h1::after {
     background: dodgerblue;
     bottom: 0;
     left: calc(50% - 110px);
-    /*border-radius: 3px;*/
 }
 
-/**
-* first cube shape in about section
-*/
 main > section:nth-child(2) > div:nth-child(2) {
-    /*position: absolute;
-    width: 150px;
-    height: 150px;
-    left: 120px;
-    top: 173px;*/
     display: none;
-}
-
-/**
-* about description in about section
-*/
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) {
-    width: 667px;
-    display: flex;
-    flex-direction: column;
-}
-
-/**
-* description title in about section
-*/
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > h2:first-child {
-    font-family: 'Poppins', sans-serif;
-    font-size: 35px;
-    line-height: 52px;
-    margin-top: 0;
-    margin-bottom: 24px;
-    color: white;
-}
-
-/**
-* introducing description in about section
-*/
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > p:nth-child(2), p:nth-child(3) {
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    line-height: 24px;
-    color: white /*!important*/;
-    margin-top: 0;
-}
-
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > p > abbr:hover {
-    cursor: pointer;
-}
-
-/**
-* wave shape in about section
-*/
-#aboutWave {
-    /*position: absolute;
-    width: 352px;
-    height: 74px;
-    fill: none;
-    left: 0px;
-    top: 730px;*/
-    display: none;
-}
-
-/**
-* line circle shape in about section
-*/
-#aboutLineCircle {
-    /*position: absolute;
-    width: 114px;
-    height: 157px;
-    fill: none;
-    right: 0;
-    bottom: 25px;*/
-    display: none;
-}
-
-/**
-* my details position and introducing display type about section
-*/
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) {
-    position: relative;
-    width: 550px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/**
-* my details column 1 titles customized about section
-*/
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p {
-    font-family: Poppins;
-    font-size: 17px;
-    color: white;
-}
-
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p > i:first-child {
-    color: dodgerblue;
-    font-size: 1em;
-    margin-right: 10px;
-}
-
-/**
-* my details column 1 span customized about section
-*/
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p > span {
-    color: white;
-}
-
-/**
-* my details column 2 titles customized about section
-*/
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p {
-    font-family: Poppins;
-    font-size: 17px;
-    color: white;
-}
-
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p > i:first-child {
-    color: dodgerblue;
-    font-size: 1em;
-    margin-right: 10px;
-}
-
-/**
-* introduced my details column 2 position about section
-*/
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 {
-    position: absolute;
-    right: 0;
-}
-
-/**
-* my details column 2 span customized about section
-*/
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p > span {
-    color: white;
-}
-
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) {
-    position: relative;
-    top: 16px;
-    margin-bottom: 65px;
-}
-
-/**
-* description section button position about section
-*/
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child {
-    width: 209px;
-    height: 46px;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    /*box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.36);*/
-    border-radius: 10px;
-    font-family: 'Ubuntu', SansSerif;
-    text-align: center;
-    padding-left: 0px;
-    color: #FFFFFF;
-    cursor: pointer;
-    border-width: 0;
-    font-size: 20px;
-}
-
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child:hover {
-    color: black;
-    transform: scale(1.01);
-    box-shadow: 0 0 15px 3px dodgerblue;
-    transition: all 0.5s ease;
-}
-
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child > div {
-    position: absolute;
-    width: 43px;
-    height: 42px;
-    left: 163px;
-    top: 2px;
-    border-radius: 100%;
-    background: #F9FAFB;
-    box-shadow: inset -13px -13px 16px #FFFFFF, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
-    cursor: pointer;
-}
-
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child > div:first-child > i:first-child {
-    height: 27px;
-    width: 27px;
-    position: absolute;
-    left: 32%;
-    top: 30%;
-    bottom: 41.09%;
-    color: dodgerblue;
-    cursor: pointer;
 }
 
 main > section:nth-child(2) > section:nth-child(3) {
@@ -255,22 +53,120 @@ main > section:nth-child(2) > section:nth-child(3) {
     margin-top: 50px;
 }
 
-main > section:nth-child(2) > section:nth-child(3) > div:first-child {
-    width: 1122px;
+main > section:nth-child(2) > section:nth-child(3) > div {
+    width: 2000px;
     display: flex;
     gap: 92px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-left: 67px;
     margin-right: 67px;
     transition: all 2s;
 }
 
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(6) {
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) {
+    width: 667px;
+    display: flex;
+    flex-direction: column;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    line-height: 52px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: white;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > p:nth-child(2), p:nth-child(3) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+    margin-top: 0;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > p > abbr:hover {
+    cursor: pointer;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(4) {
+    position: relative;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(4) > #column1 > p {
+    font-family: Poppins;
+    font-size: 17px;
+    color: white;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(4) > #column1 > p > i {
+    color: dodgerblue;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(4) > #column1 > p > span {
+    color: white;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(4) > #column2 > p {
+    font-family: Poppins;
+    font-size: 17px;
+    color: white;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(4) > #column2 > p > i {
+    color: dodgerblue;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(4) > #column2 {
+    position: absolute;
+    right: 0;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(4) > #column2 > p > span {
+    color: white;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(5) {
+    position: relative;
+    top: 16px;
+    margin-bottom: 65px;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(5) > button {
+    width: 209px;
+    height: 46px;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border-radius: 10px;
+    font-family: 'Ubuntu', SansSerif;
+    text-align: center;
+    padding-left: 0px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-width: 0;
+    font-size: 20px;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside:nth-child(2) > div:nth-child(5) > button:hover {
+    color: black;
+    transform: scale(1.01);
+    box-shadow: 0 0 15px 3px dodgerblue;
+    transition: all 0.5s ease;
+}
+
+main > section:nth-child(2) > section:nth-child(3) > div > aside > div:nth-child(4) > div:nth-child(1) > p:nth-child(6) {
     display: none;
 }
 
-main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(7) {
+main > section:nth-child(2) > section:nth-child(3) > div > aside > div:nth-child(4) > div:nth-child(1) > p:nth-child(7) {
     display: none;
 }
