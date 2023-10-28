@@ -4,26 +4,13 @@ main > section:nth-child(7) {
     width: 100%;
 }
 
-/**
-* title in contact section
-*/
-main > section:nth-child(7) > section:first-child {
+main > section:nth-child(7) > section:nth-child(1) {
     position: relative;
     text-align: center;
-    padding-top: 68px;
+    padding-top: 100px;
 }
 
-main > section:nth-child(7) > section:first-child > h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: initial;
-    font-size: 25px;
-    color: dodgerblue !important;
-    text-align: center;
-    padding-top: 12px;
-    margin: 0;
-}
-
-main > section:nth-child(7) > section:first-child > h1 {
+main > section:nth-child(7) > section:nth-child(1) > h1 {
     font-family: Ubuntu, sans-serif;
     font-size: 50px;
     text-align: center;
@@ -33,10 +20,7 @@ main > section:nth-child(7) > section:first-child > h1 {
     color: white;
 }
 
-/**
-* title underline position and display flex type in contact section
-*/
-main > section:nth-child(7) > section:first-child > h1::before {
+main > section:nth-child(7) > section:nth-child(1) > h1::before {
     content: "";
     position: absolute;
     display: block;
@@ -48,7 +32,7 @@ main > section:nth-child(7) > section:first-child > h1::before {
     border-radius: 2px;
 }
 
-main > section:nth-child(7) > section:first-child > h1::after {
+main > section:nth-child(7) > section:nth-child(1) > h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -57,21 +41,14 @@ main > section:nth-child(7) > section:first-child > h1::after {
     background: dodgerblue;
     bottom: 0;
     left: calc(50% - 110px);
-    /*border-radius: 3px;*/
 }
 
-/**
-* customized titles, display type and flex-direction in contact section
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:first-child {
     display: flex;
     flex-direction: column;
     margin-top: 70px;
 }
 
-/**
-* customized first title
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:first-child > h3:first-child {
     font-family: 'Roboto', sans-serif;
     font-size: 29px;
@@ -80,9 +57,6 @@ main > section:nth-child(7) > section:nth-child(2) > section:first-child > h3:fi
     color: dodgerblue;
 }
 
-/**
-* customized second title
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:first-child > h4:nth-child(2) {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
@@ -91,9 +65,6 @@ main > section:nth-child(7) > section:nth-child(2) > section:first-child > h4:nt
     color: white;
 }
 
-/**
-* contact details display flex type and justify-content center in contact section
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) {
     display: flex;
     margin-top: 90px;
@@ -101,27 +72,18 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) {
     justify-content: center;
 }
 
-/**
-* contact details justify-content space-evenly in contact section
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div {
     display: inline-flex;
     justify-content: space-evenly;
     width: 1004px;
 }
 
-/**
-* all contact details divs added flex-direction column and align-items center in contact section
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/**
-* customized all contact detail sections title fonts sizes in contact section
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > h4:nth-child(2) {
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
@@ -129,9 +91,6 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:
     color: white;
 }
 
-/**
-* customized all contact detail sections icons sizes and colors in contact section
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > i:first-child {
     color: dodgerblue;
     font-size: 1.99em;
@@ -139,30 +98,22 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:
 
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > i:first-child:hover {
     transform: scale(1.2);
+    transition: 0.5s;
     cursor: pointer;
 }
 
-/**
-* customized all contact detail sections descriptions fonts sizes in contact section
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > p:nth-child(3) {
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
     margin: 10px 0 0;
 }
 
-/**
-* customized send me email section titles, display type and flex-direction in contact section
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) {
     display: flex;
     flex-direction: column;
     margin-top: 70px;
 }
 
-/**
-* Added send me email section first title
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) > h3:first-child {
     font-family: 'Roboto', sans-serif;
     font-size: 29px;
@@ -171,9 +122,6 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) > h3:f
     color: dodgerblue;
 }
 
-/**
-* Added send me email section second title
-*/
 main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) > h4:nth-child(2) {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
@@ -182,23 +130,16 @@ main > section:nth-child(7) > section:nth-child(2) > section:nth-child(3) > h4:n
     color: white;
 }
 
-/**
-* send me email section position center
-*/
 main > section:nth-child(7) > section:nth-child(3) {
     display: flex;
     justify-content: center;
     margin-top: 80px;
 }
 
-/**
-* customized name and email texts in contact section
-*/
 .contactDetails > input {
     width: 39vw;
     height: 44px;
     background: #F7F8FA;
-    /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
     border-radius: 10px;
     border: none;
     padding: 0 0 0 20px;
@@ -208,14 +149,10 @@ main > section:nth-child(7) > section:nth-child(3) {
     box-shadow: 0 0 15px 3px dodgerblue;
 }
 
-/**
-* customized subject text in contact section
-*/
 main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(2) > input {
     width: 81vw;
     height: 44px;
     background: #F7F8FA;
-    /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
     border-radius: 10px;
     border: none;
     padding: 0 0 0 20px;
@@ -225,14 +162,10 @@ main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-c
     box-shadow: 0 0 15px 3px dodgerblue;
 }
 
-/**
-* customized message textarea in contact section
-*/
 main > section:nth-child(7) > section:nth-child(3) > form:first-child > fieldset > div:nth-child(3) > textarea {
     width: 81vw;
     height: 184px;
     background: #F7F8FA;
-    /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
     border-radius: 10px;
     border: none;
     padding: 20px 0 0 20px;
@@ -246,34 +179,24 @@ main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-c
     position: relative;
 }
 
-/**
-* added display type flex and flex-direction column send message section in contact section
-*/
 main > section:nth-child(7) > section:nth-child(3) > div:first-child {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/**
-* added flex-direction row and gap name and email in contact section
-*/
 main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:first-child {
     display: flex;
     flex-direction: row;
     gap: 2.9vw;
 }
 
-/**
-* added button and customized it in contact section
-*/
 main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button {
     display: flex;
     gap: 27px;
     width: 185px;
     height: 49px;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-    /*box-shadow: 28px 28px 50px rgba(151, 153, 155, 0.36);*/
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
     border-radius: 10px;
     border: none;
     font-family: 'Ubuntu', sans-serif;
@@ -310,9 +233,6 @@ main > section:nth-child(7) > section:nth-child(3) > form > fieldset > div:nth-c
     color: dodgerblue;
 }
 
-/**
-* added form flex-direction column and gap in contact section
-*/
 main > section:nth-child(7) > section:nth-child(3) > form {
     display: inline-block;
 }
