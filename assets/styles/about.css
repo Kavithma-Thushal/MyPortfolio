@@ -205,7 +205,7 @@ main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth
 main > section:nth-child(2) > section:nth-child(3) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child {
     width: 209px;
     height: 46px;
-    background-color: dodgerblue;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     /*box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.36);*/
     border-radius: 10px;
     font-family: 'Ubuntu', SansSerif;
