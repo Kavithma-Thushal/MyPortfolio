@@ -4,9 +4,6 @@ footer {
     background: #464444;
 }
 
-/**
-* customized h1 in footer
-*/
 footer > section:first-child > div:first-child > h2:first-child {
     font-family: 'Ubuntu', sans-serif;
     font-size: 50px;
@@ -15,66 +12,44 @@ footer > section:first-child > div:first-child > h2:first-child {
     margin-bottom: 20px;
 }
 
-/**
-* customized span in footer
-*/
 footer > section:first-child > div:first-child > h2:first-child > span {
     font-family: 'Ubuntu', sans-serif;
     font-size: 50px;
     color: dodgerblue;
 }
 
-/**
-* added section display type flex and justify-content center in footer section
-*/
 footer > section:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/**
-* added social media icons justify-content space-evenly in footer section
-*/
 footer > section:first-child > div:first-child > nav:nth-child(2) {
     display: flex;
     justify-content: center;
     gap: 25px;
 }
 
-/**
-* added section display type flex and flex-direction column in footer section
-*/
 footer > section:first-child > div:first-child {
     display: flex;
     flex-direction: column;
 }
 
-/**
-* added section added gap and justify-content space-evenly in footer section
-*/
 footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child {
     display: flex;
     justify-content: space-evenly;
     gap: 37px
 }
 
-/**
-* customized social media icons covers in footer
-*/
 footer > section:first-child > div:first-child > nav:nth-child(2) > div {
     width: 50px;
     height: 50px;
     background: white;
-    /*box-shadow: -4px -4px 12px rgba(236, 236, 236, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.16);*/
     border-radius: 14px;
     text-align: center;
     cursor: pointer;
 }
 
-/**
-* added social media icons hover effects in footer
-*/
 footer > section:first-child > div:first-child > nav:nth-child(2) > div:hover {
     transition: all 0.5s ease;
     -webkit-transform: scale(1.10);
@@ -87,9 +62,6 @@ footer > section:first-child > div:first-child > nav:nth-child(2) > div:hover > 
     color: dodgerblue !important;
 }
 
-/**
-* customized social media icons and added color in footer section
-*/
 footer > section:first-child > div:first-child > nav:nth-child(2) > div > a > i {
     font-size: 2.00em;
     color: black;
@@ -97,9 +69,6 @@ footer > section:first-child > div:first-child > nav:nth-child(2) > div > a > i 
     cursor: pointer;
 }
 
-/**
-* added list color and font size in footer section
-*/
 footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -114,25 +83,16 @@ footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-chi
     color: white;
 }
 
-/**
-* added hover menu list in footer section
-*/
 footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li > a:hover {
     color: dodgerblue;
     transition: 0.5s all;
 }
 
-/**
-* customized copyrights section in footer
-*/
 footer > section:nth-child(3) {
     background: #343030;
     text-align: center;
 }
 
-/**
-* added color copyrights section text in footer
-*/
 footer > section:nth-child(3) > small:first-child {
     color: white;
 }
