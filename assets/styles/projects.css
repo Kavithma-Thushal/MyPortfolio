@@ -4,26 +4,13 @@ main > section:nth-child(6) {
     width: 100%;
 }
 
-/**
-* title in project section
-*/
-main > section:nth-child(6) > section:first-child {
+main > section:nth-child(6) > section:nth-child(1) {
     position: relative;
     text-align: center;
-    padding-top: 68px;
+    padding-top: 100px;
 }
 
-main > section:nth-child(6) > section:first-child > h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: initial;
-    font-size: 25px;
-    color: dodgerblue !important;
-    text-align: center;
-    padding-top: 12px;
-    margin: 0;
-}
-
-main > section:nth-child(6) > section:first-child > h1 {
+main > section:nth-child(6) > section:nth-child(1) > h1 {
     font-family: Ubuntu, sans-serif;
     font-size: 50px;
     text-align: center;
@@ -33,10 +20,7 @@ main > section:nth-child(6) > section:first-child > h1 {
     color: white;
 }
 
-/**
-* title underline in project section
-*/
-main > section:nth-child(6) > section:first-child > h1::before {
+main > section:nth-child(6) > section:nth-child(1) > h1::before {
     content: "";
     position: absolute;
     display: block;
@@ -48,7 +32,7 @@ main > section:nth-child(6) > section:first-child > h1::before {
     border-radius: 2px;
 }
 
-main > section:nth-child(6) > section:first-child > h1::after {
+main > section:nth-child(6) > section:nth-child(1) > h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -57,12 +41,8 @@ main > section:nth-child(6) > section:first-child > h1::after {
     background: dodgerblue;
     bottom: 0;
     left: calc(50% - 110px);
-    /*border-radius: 3px;*/
 }
 
-/**
-* added section and display flex type project section
-*/
 main > section:nth-child(6) > section:nth-child(2) {
     display: flex;
     margin-top: 60px;
@@ -70,9 +50,6 @@ main > section:nth-child(6) > section:nth-child(2) {
     justify-content: center;
 }
 
-/**
-* added display flex and wrap project section
-*/
 .wrapper {
     width: 1217px;
     display: flex;
@@ -84,9 +61,6 @@ main > section:nth-child(6) > section:nth-child(2) {
     flex-wrap: wrap;
 }
 
-/**
-* position card project section
-*/
 .card {
     position: relative;
     width: 339px;
@@ -95,32 +69,20 @@ main > section:nth-child(6) > section:nth-child(2) {
     cursor: pointer;
 }
 
-/**
-* added image padding project section
-*/
 .card-inner {
     padding-right: 30px;
 }
 
-/**
-* position image project section
-*/
 .card-thumb {
     position: relative;
     z-index: 2;
 }
 
-/**
-* customized image sizes project section
-*/
 .card-thumb img {
     width: 100%;
     border-radius: 15px;
 }
 
-/**
-* customized icon wrapper project section
-*/
 .card-thumb span {
     width: 80px;
     height: 80px;
@@ -139,18 +101,11 @@ main > section:nth-child(6) > section:nth-child(2) {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
-/**
-* added hover and color change project section
-*/
 .card-inner:hover .card-thumb span {
     background-color: #fff;
     color: dodgerblue;
-    /*box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.16), -23px -23px 45px #FFFFFF;*/
 }
 
-/**
-* customized card-details and position project section
-*/
 .card_detail {
     position: relative;
     height: 290px;
@@ -160,9 +115,6 @@ main > section:nth-child(6) > section:nth-child(2) {
     padding-top: 39px;
 }
 
-/**
-* customized card and position project section
-*/
 .card_detail::before {
     position: absolute;
     content: " ";
@@ -174,28 +126,16 @@ main > section:nth-child(6) > section:nth-child(2) {
     z-index: -1;
     transition: .5s;
     border-radius: 20px;
-    /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
 }
 
-/**
-* added hover and card-inner, card-detail color change project section
-*/
 .card-inner:hover .card_detail::before {
     background-color: dodgerblue;
 }
 
-/**
-* added hover heading, description and icon project section
-*/
-.card-inner:hover .card_detail h4,
-.card-inner:hover .card_detail p,
-.card-inner:hover .card_detail a {
+.card-inner:hover .card_detail h4, .card-inner:hover .card_detail p, .card-inner:hover .card_detail a {
     color: #fff;
 }
 
-/**
-* customized heading project section
-*/
 .card_detail h4 {
     font-size: 25px;
     font-family: 'Ubuntu', sans-serif;
@@ -204,9 +144,6 @@ main > section:nth-child(6) > section:nth-child(2) {
     transition: .5s;
 }
 
-/**
-* customized description project section
-*/
 .card_detail p {
     font-family: 'Poppins';
     font-size: 15px;
@@ -216,315 +153,9 @@ main > section:nth-child(6) > section:nth-child(2) {
     margin: 0 20px 20px;
 }
 
-/**
-* customized icon project section
-*/
 .card_detail a {
     font-size: 25px;
     font-family: 'Ubuntu', sans-serif;
     color: dodgerblue;
     transition: .5s;
-}
-
-/**
-* added project counting section
-*/
-main > section:nth-child(6) > div:nth-child(3) {
-    width: 100%;
-    height: 250px;
-    margin-top: 60px;
-    background: dodgerblue;
-    box-shadow: -23px -23px 45px rgba(0, 0, 0, 0.25), 28px 28px 50px rgba(13, 39, 80, 0.16);
-}
-
-/**
-* added project counting section position and display type flex
-*/
-main > section:nth-child(6) > div:nth-child(3) > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 748px;
-}
-
-main > section:nth-child(6) > div:nth-child(3) > div > div {
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-main > section:nth-child(6) > section:nth-child(4) > div:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 1100px;
-}
-
-/**
-* added project counts section and justify-content space around
-*/
-main > section:nth-child(6) > section:nth-child(4) > div:first-child > div:first-child {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 68%;
-    background: #ECF0F3;
-    box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.16), inset -23px -23px 45px #FFFFFF;
-    border-radius: 25px;
-}
-
-/**
-* added project counts section positions justify-content center
-*/
-main > section:nth-child(6) > section:nth-child(4) {
-    display: flex;
-    margin-top: -96px;
-    align-items: center;
-    justify-content: center;
-}
-
-/**
-* added cube shape project section
-*/
-main > section:nth-child(6) > div:nth-child(3) > div > div:nth-child(2) {
-    margin-top: 226px;
-    margin-right: -32px;
-    z-index: 3;
-}
-
-main > section:nth-child(6) > section:nth-child(4) > div:first-child > div:first-child > div {
-    margin-block-start: 24px;
-    margin-inline-start: 36px;
-    width: 173px;
-    height: 153px;
-}
-
-/**
-* added heading dots
-*/
-.headingDots {
-    position: absolute;
-    margin-inline-start: 33px;
-    width: 5.375em;
-}
-
-/**
-* added number count and customized
-*/
-main > section:nth-child(6) > section:nth-child(4) > div:first-child > div:first-child > div > p:nth-child(2) {
-    font-family: 'Lato';
-    font-size: 74px;
-    color: #000000 !important;
-    margin: 25px 0px 0px;
-    text-align: center;
-}
-
-/**
-* added description and customized
-*/
-main > section:nth-child(6) > section:nth-child(4) > div:first-child > div:first-child > div > p:nth-child(3) {
-    font-family: 'Lato';
-    font-size: 20px;
-    color: #000000 !important;
-    margin: 0px 0px 0px -24px;
-    text-align: center;
-}
-
-/**
-* title in clients section
-*/
-main > section:nth-child(6) > section:nth-child(5) {
-    /*position: relative;
-    text-align: center;
-    margin-top: 47px;*/
-    display: none;
-}
-
-main > section:nth-child(6) > section:nth-child(5) > h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: initial;
-    font-size: 25px;
-    color: dodgerblue !important;
-    padding-top: 12px;
-    margin: 0;
-}
-
-main > section:nth-child(6) > section:nth-child(5) > h1 {
-    font-family: Ubuntu, sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-    color: #000000 !important;
-    margin-top: 5px;
-    margin-bottom: 7px;
-}
-
-/**
-* title underline position and display flex type in project section
-*/
-main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 101px;
-    gap: 15px;
-}
-
-main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3) > div:first-child {
-    width: 30px;
-    height: 8px;
-    background: dodgerblue !important;
-    border-radius: 3px;
-}
-
-main > section:nth-child(6) > section:nth-child(5) > div:nth-child(3) > div:nth-child(2) {
-    top: -8px;
-    width: 89px;
-    height: 8px;
-    background: dodgerblue !important;
-    left: 27.89%;
-    border-radius: 3px;
-}
-
-/**
-* added photo cover circles in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:first-child {
-    width: 200px;
-    height: 197px;
-    background: #ECF0F3;
-    border: 12px solid #000000;
-    border-radius: 100%;
-    position: relative;
-}
-
-/**
-* added description boxes in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) {
-    width: 330px;
-    height: 330px;
-    background: #ECF0F3;
-    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
-    border-radius: 93px;
-    z-index: 1;
-    text-align: center;
-    cursor: pointer;
-    margin-top: -245px;
-}
-
-/**
-* added position center and display type flex in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) {
-    /*position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 80px;*/
-    display: none;
-}
-
-/**
-* added display type inline-flex and added gap in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) > div:first-child {
-    width: 1089px;
-    margin-left: 67px;
-    margin-right: 67px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 49px;
-    justify-content: center;
-    align-items: center;
-}
-
-/**
-* added cover circle flex direction column and center in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/**
-* position first client image in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > img:nth-child(2) {
-    position: relative;
-    bottom: 174px;
-    z-index: 2;
-}
-
-/**
-* customized all clients names in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > h3:first-child {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 0;
-    color: #000000;
-}
-
-/**
-* added display type inline-flex and flex-direction column in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div {
-    display: inline-flex;
-    flex-direction: column;
-    margin-top: 69px;
-}
-
-/**
-* customized all clients descriptions in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(3) > div > p:nth-child(2) {
-    width: 217px;
-    font-family: 'Poppins';
-    font-size: 15px;
-    margin-bottom: 15px;
-    color: #666;
-}
-
-/**
-* added quote size in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4) > i {
-    font-size: 2em;
-}
-
-/**
-* added quote position in client section
-*/
-main > section:nth-child(6) > section:nth-child(6) > div:first-child > div > div:nth-child(4) {
-    position: relative;
-    bottom: 199px;
-    left: 121px;
-    z-index: 1;
-}
-
-/**
-* added hover in client section
-*/
-.client-inner .wrap-client:hover .client-details h3, .client-inner .wrap-client:hover .client-details p {
-    color: #fff !important;
-    transition: all .5s;
-}
-
-.client-inner:hover .client-quote i {
-    color: #fff;
-    transition: all .5s;
-}
-
-.client-inner:hover .client-circle {
-    border-color: dodgerblue !important;
-    transition: all .5s;
-}
-
-.client-inner .wrap-client:hover {
-    background-color: dodgerblue !important;
-    transition: all .5s;
 }
