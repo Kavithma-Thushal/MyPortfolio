@@ -16,7 +16,7 @@
     <link rel="icon" href="assets/img/logo.png">
     <title>Kavithma Thushal | Software Engineer</title>
 
-    <link rel="stylesheet" href="assets/styles/fonts/css/all.css">
+    <link rel="stylesheet" href="assets/styles/fonts/css/all.min.css">
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/major.css">
     <link rel="stylesheet" href="assets/styles/header.css">
@@ -30,23 +30,31 @@
     <link rel="stylesheet" href="assets/styles/footer.css">
     <link rel="stylesheet" href="assets/styles/responsive.css">
 
-    <link rel="stylesheet" href="assets/styles/swiper/swiper.min.css">
-    <link rel="stylesheet" href="assets/styles/swiper/style.css">
+    <link rel="stylesheet" href="assets/styles/swipper/swiper.min.css">
+    <link rel="stylesheet" href="assets/styles/swipper/style.css">
 </head>
 
 <body>
 <header>
+    <!--<div id="loaderContainer">
+        <div class="loader">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>-->
     <section id="loader">
         <div></div>
     </section>
     <section>
         <aside>
+            <!--<div class="headingFirstShape"></div>-->
             <span id="heading1">Portfo<span id="heading2">lio</span></span>
         </aside>
         <input type="checkbox" class="theme-checkbox">
         <nav class="menu">
             <ul>
-                <li><a class="hover-line" href="#home">HOME</a></li>
+                <li><a class="active-hover-line" href="#home" id="active">HOME</a></li>
                 <li><a class="hover-line" href="#about">ABOUT</a></li>
                 <li><a class="hover-line" href="#services">SERVICES</a></li>
                 <li><a class="hover-line" href="#skills">SKILLS</a></li>
@@ -55,6 +63,12 @@
                 <li><a class="hover-line" href="#contactUs">CONTACTS</a></li>
             </ul>
         </nav>
+        <!--<aside>
+            <div class="headingSecondShape"></div>
+        </aside>-->
+        <!--<button id="header-Nav">
+            <i class="fa-solid fa-bars"></i>
+        </button>-->
     </section>
 </header>
 <video id="background_video" autoplay="" loop="" muted="">
@@ -66,44 +80,59 @@
     <section id="home">
         <section>
             <div>
+                <!--description-->
                 <aside>
                     <h3>Hello</h3>
                     <h1><span>I'm</span> Kavithma Thushal</h1>
                     <h1>a <span class="typing"></span>|</h1>
-                    <button>Hire Me</button>
+                    <button>Hire Me
+                        <!--<div><i class="fa-solid fa-circle-chevron-right"></i></div>-->
+                    </button>
+                    <!--social images-->
                     <section>
                         <h3>CONNECT WITH ME</h3>
                         <nav>
-                            <div><a href="https://github.com/Thushal2001" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a></div>
+                            <div><a href="https://web.facebook.com/home.php" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a></div>
+                            <div><a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></div>
                             <div><a href="https://www.linkedin.com/feed/" target="_blank"><i
                                     class="fa-brands fa-linkedin-in"></i></a></div>
                             <div><a href="https://twitter.com/home" target="_blank"><i
                                     class="fa-brands fa-twitter"></i></a></div>
-                            <div><a href="https://www.instagram.com/" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a></div>
-                            <div><a href="https://web.facebook.com/home.php" target="_blank"><i
-                                    class="fa-brands fa-facebook-f"></i></a></div>
+                            <div><a href="https://github.com/Thushal2001" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a></div>
                         </nav>
                     </section>
                 </aside>
+                <!--image-->
                 <aside>
                     <div></div>
                 </aside>
             </div>
         </section>
+        <!--<div></div>
+        <div></div>
+        <div></div>-->
     </section>
 
     <section id="about">
+        <!--title-->
         <section>
+            <!--<h4>About</h4>-->
             <h1>About Me</h1>
         </section>
-        <div></div>
+        <div>
+            <!--<img src="assets/img/About%20Section%20Cube.svg">-->
+        </div>
+
         <section>
             <div>
+                <!--image-->
                 <div>
                     <img src="assets/img/about-img.png">
                 </div>
+                <!--description-->
                 <aside>
                     <h2>I have 1+ year of experience</h2>
                     <p>I am a software engineering student at <abbr
@@ -160,54 +189,131 @@
                         </div>
                     </div>
                     <div>
-                        <button>Download CV</button>
+                        <button>Download CV
+                            <!--<div><i class="fa-solid fa-download"></i></div>-->
+                        </button>
                     </div>
                 </aside>
             </div>
         </section>
+
+        <!--<div>
+            <img id="aboutWave" src="assets/img/Wave.svg">
+        </div>
+        <div>
+            <img id="aboutLineCircle" src="assets/img/Line%20Circle.svg">
+        </div>
+        <div></div>
+        <div id="aboutCube2">
+            <img src="assets/img/About%20Section%20Cube.svg">
+        </div>-->
     </section>
 
     <section id="services">
+        <!--title-->
         <section>
+            <!--<h4>Services</h4>-->
             <h1>Services</h1>
         </section>
+
         <section>
             <section>
+                <!--enterprise application description-->
                 <div>
                     <div><i class="fa-solid fa-laptop-code"></i></div>
                     <h4>Enterprise Application</h4>
                     <p>Create modern enterprise software, ensure reliable software integration, and improve your
                         heritage system</p>
                 </div>
+
+                <!--web development description-->
                 <div>
                     <div><i class="fa-solid fa-code"></i></div>
                     <h4>Web Development</h4>
                     <p>Leveraging our considerable expertise in the latest technologies, we provide perfect cloud-based
                         web solutions to run your business or promote your business</p>
                 </div>
+
+                <!--ui/ux designing description-->
                 <div>
                     <div><i class="fa-solid fa-brush"></i></div>
                     <h4>UI / UX Designing</h4>
                     <p>I design UI/UX using Figma and Adobe XD for desktop apps, mobile apps, and web apps</p>
                 </div>
+
+                <!--graphic designing description-->
+                <!--<div>
+                    <div><i class="fa-solid fa-palette"></i></div>
+                    <h4>Graphic Designing</h4>
+                    <p>The best designer can change everything in the artwork. I think graphic designers are like a
+                        magician
+                        in
+                        this field.</p>
+                </div>
+
+                &lt;!&ndash;freelancer description&ndash;&gt;
+                <div>
+                    <div><i class="fa-solid fa-envelope"></i></div>
+                    <h4>Freelancer</h4>
+                    <p>Discover your next career move, freelance gig, or internship. Apply to full-time design jobs and
+                        freelance opportunities. I'm searching For Projects</p>
+                </div>
+
+                &lt;!&ndash;ecommerce description&ndash;&gt;
+                <div>
+                    <div><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h4>Ecommerce</h4>
+                    <p>Creation of platforms to buy and sell products securely over the internet</p>
+                </div>-->
             </section>
         </section>
+        <!--<div>
+            <img src="assets/img/Service%20Section%20Cube.svg">
+        </div>-->
     </section>
 
     <section id="skills">
+        <!--title-->
         <section>
+            <!--<h4>Skills</h4>-->
             <h1>My Skills</h1>
         </section>
+
+        <!--<section id="skillHeadings">
+            <div id="btnEducation">
+                <i id="eduIcon" class="fa-solid fa-graduation-cap"></i>
+                Education
+            </div>
+            <div id="btnWork">
+                <i id="workIcon" class="fa-solid fa-briefcase"></i>
+                Work
+            </div>
+        </section>-->
+
         <div id="skillsCube"></div>
         <section></section>
         <div></div>
+
+        <!--education qualification -->
         <section id="Achievements">
-            <article>
+            <article> <!--Header Paragraph sectioning -->
                 <h4></h4>
+                <!--<h1><span>My</span> Achievements</h1>-->
+
+                <!--Underline Header-->
                 <div></div>
                 <div></div>
             </article>
-            <section>
+
+            <section> <!--Image sectioning  -->
+                <!--<div id="images">
+                    <img alt="Image" src="assets/styles/img/images/Achievement_Main.jpg">
+                    <img alt="Image" src="assets/styles/img/vector/svg/Achievement_Main.svg">
+                    <img alt="Image" src="assets/styles/img/vector/svg/Achievement_Star1.svg">
+                    <img alt="Image" src="assets/styles/img/vector/svg/Achievement_Star2.svg">
+                </div>-->
+
+                <!-- Swiper -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"
@@ -271,12 +377,39 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Add Pagination -->
+                    <!--<div class="swiper-pagination"></div>-->
                 </div>
-                <script src="assets/js/swiper/swiper.min.js"></script>
-                <script src="assets/js/swiper/swiper.js"></script>
+
+                <script src="assets/styles/swipper/swiper.min.js"></script>
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        effect: 'coverflow',
+                        grabCursor: true,
+                        centeredSlides: true,
+                        slidesPerView: 'auto',
+                        coverflowEffect: {
+                            rotate: 10,
+                            stretch: 0,
+                            depth: 100,
+                            modifier: 5,
+                            slideShadows: true,
+                        },
+                        pagination: {
+                            el: '.swiper-pagination',
+                        },
+                    });
+                </script>
             </section>
         </section>
         <div></div>
+
+        <!--<section id="lan-heading">
+            <div id="languages">
+                <i id="lanIcon" class="fa-solid fa-laptop-code"></i>
+                Languages
+            </div>
+        </section>-->
         <section id="new">
             <section id="icon-section">
                 <div class="slider">
@@ -339,25 +472,32 @@
     </section>
 
     <section id="gallery">
+        <!--title-->
         <section>
+            <!--<h4>Gallery</h4>-->
             <h1>My Gallery</h1>
+            <div></div>
+            <div></div>
         </section>
         <section>
+            <!--Grid Container-->
             <section>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div></div> <!--Grid Items-->
+                <div></div> <!--Grid Items-->
+                <div></div> <!--Grid Items-->
+                <div></div> <!--Grid Items-->
+                <div></div> <!--Grid Items-->
+                <div></div> <!--Grid Items-->
+                <div></div> <!--Grid Items-->
+                <div></div> <!--Grid Items-->
             </section>
         </section>
     </section>
 
     <section id="projects">
+        <!--title-->
         <section>
+            <!--<h4>Project</h4>-->
             <h1>Projects</h1>
         </section>
         <section>
@@ -380,6 +520,7 @@
                         </div>
                     </div>
                 </a>
+
                 <a href="pages/projects.html" target="_blank">
                     <div class="row">
                         <div class="card">
@@ -401,7 +542,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" target="_blank">
+
+                <a href="" target="_blank">
                     <div class="row">
                         <div class="card">
                             <div class="card-inner">
@@ -425,17 +567,144 @@
                 </a>
             </div>
         </section>
+
+        <!--<div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        &lt;!&ndash;project counting section&ndash;&gt;
+        <section>
+            <div>
+                <div>
+                    &lt;!&ndash;completed projects&ndash;&gt;
+                    <div>
+                        <svg class="headingDots">
+                            <circle cx="4.5" cy="22.5" r="3.5" fill="#D9D9D9" stroke="#FFA500" stroke-width="2"/>
+                            <circle cx="43" cy="6" r="5" fill="#D9D9D9" stroke="#FFA500" stroke-width="2"/>
+                            <circle cx="79.5" cy="21.5" r="4.5" fill="#FFA500"/>
+                        </svg>
+                        <p>20<sup>+</sup></p>
+                        <p>Completed Projects</p>
+                    </div>
+
+                    &lt;!&ndash;in process&ndash;&gt;
+                    <div>
+                        <svg class="headingDots">
+                            <circle cx="4.5" cy="22.5" r="3.5" fill="#D9D9D9" stroke="#FFA500" stroke-width="2"/>
+                            <circle cx="43" cy="6" r="5" fill="#D9D9D9" stroke="#FFA500" stroke-width="2"/>
+                            <circle cx="79.5" cy="21.5" r="4.5" fill="#FFA500"/>
+                        </svg>
+                        <p>2<sup>+</sup></p>
+                        <p>In Process</p>
+                    </div>
+
+                    &lt;!&ndash;happy clients&ndash;&gt;
+                    <div>
+                        <svg class="headingDots">
+                            <circle cx="4.5" cy="22.5" r="3.5" fill="#D9D9D9" stroke="#FFA500" stroke-width="2"/>
+                            <circle cx="43" cy="6" r="5" fill="#D9D9D9" stroke="#FFA500" stroke-width="2"/>
+                            <circle cx="79.5" cy="21.5" r="4.5" fill="#FFA500"/>
+                        </svg>
+                        <p>5<sup>+</sup></p>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        &lt;!&ndash;title&ndash;&gt;
+        <section>
+            <h4>Clients</h4>
+            <h1>My Clients</h1>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+        &lt;!&ndash;clients details&ndash;&gt;
+        <section>
+            <div>
+                <div class="client-inner">
+                    <div class="client-circle"></div>
+                    <img src="assets/img/Client%20Section%20First%20Client.svg">
+                    <div class="wrap-client">
+                        <div class="client-details">
+                            <h3>Dominick A. Gray</h3>
+                            <p>“You showed incredible leadership instincts in your work on that project. I would
+                                love to
+                                work
+                                with
+                                you to develop those skills. Amazing work.”</p>
+                            <div>
+                                <img src="assets/img/Client%20Section%20Stars.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-quote">
+                        <i class="fa-sharp fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="client-inner">
+                    <div class="client-circle"></div>
+                    <img src="assets/img/Client%20Section%20Second%20Client.svg">
+                    <div class="wrap-client">
+                        <div class="client-details">
+                            <h3>jacqueline N. Nel</h3>
+                            <p>“You have all the qualities we look for in a leader. I hope you might consider taking
+                                them to
+                                the
+                                next level by leading our next big project in this area.”</p>
+                            <div>
+                                <img src="assets/img/Client%20Section%20Stars.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-quote">
+                        <i class="fa-sharp fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="client-inner">
+                    <div class="client-circle"></div>
+                    <img src="assets/img/Client%20Section%20Third%20Client.svg">
+                    <div class="wrap-client">
+                        <div class="client-details">
+                            <h3>Jeff N. Hood</h3>
+                            <p>"Pahasara is extremely talented and passionate software engineer with thorough
+                                knowledge
+                                in
+                                software
+                                engineering from inside and out."</p>
+                            <div>
+                                <img src="assets/img/Client%20Section%20Stars.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-quote">
+                        <i class="fa-sharp fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div></div>-->
     </section>
 
     <section id="contactUs">
+        <!--title-->
         <section>
+            <!--<h4>Contact</h4>-->
             <h1>Contacts</h1>
         </section>
+
+        <!--contact information-->
         <section>
             <section>
                 <h3>Have You Any Questions ?</h3>
                 <h4>Join With Me</h4>
             </section>
+
             <section>
                 <div>
                     <div>
@@ -443,16 +712,19 @@
                         <h4>Call Us On</h4>
                         <p>+94 774519007</p>
                     </div>
+
                     <div>
                         <i class="fa-sharp fa-solid fa-location-dot"></i>
                         <h4>Address</h4>
                         <p>Galle, Sri Lanka</p>
                     </div>
+
                     <div>
                         <i class="fa-solid fa-envelope"></i>
                         <h4>Email</h4>
                         <p>kavithmathushal9007.com</p>
                     </div>
+
                     <div>
                         <i class="fa-solid fa-earth-europe"></i>
                         <h4>Web Site</h4>
@@ -460,11 +732,14 @@
                     </div>
                 </div>
             </section>
+
             <section>
                 <h3>Send Me an Email</h3>
                 <h4>We Will Work Together</h4>
             </section>
         </section>
+
+        <!--send message-->
         <section>
             <form action="details" method="post">
                 <fieldset>
@@ -480,17 +755,20 @@
                         <input type="text" id="clientSubject" placeholder="Subject" required>
                     </div>
                     <div>
-                        <textarea name="message" id="clientMsg" placeholder="Message" spellcheck="false"
-                                  required></textarea>
+                            <textarea name="message" id="clientMsg" placeholder="Message" spellcheck="false"
+                                      required></textarea>
                     </div>
                     <div>
-                        <button type="button">Submit</button>
+                        <button type="button">Submit
+                            <!--<div><i class="fa-solid fa-circle-chevron-right"></i></div>-->
+                        </button>
                     </div>
                 </fieldset>
             </form>
         </section>
     </section>
 </main>
+
 <footer>
     <section>
         <div>
@@ -518,21 +796,22 @@
                     <li><a href="#contactUs">Contacts</a></li>
                 </ul>
             </nav>
+            <h2>Portfo<span>lio</span></h2>
         </div>
     </section>
     <aside></aside>
     <section><small>© 2023 All Right Reserved Designed By Kavithma Thushal</small></section>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 <script src="assets/js/jquery-3.7.1.js"></script>
-<script src="assets/js/typed.min.js"></script>
 <script src="assets/js/dark_mode.js"></script>
 <script>
     // Loader
     $(window).on('load', function () {
         $("#loader").fadeOut(1000);
         let style = document.createElement("style");
-        style.innerHTML = `body::-webkit-scrollbar {display: block}`;
+        style.innerHTML = `body::-webkit-scrollbar {display: block;}`;
         document.head.appendChild(style);
     });
 

@@ -4,23 +4,39 @@ main > section:nth-child(4) {
     width: 100%;
 }
 
-main > section:nth-child(4) > section:nth-child(1) {
+/**
+* title in skills section
+*/
+main > section:nth-child(4) > section:first-child {
     position: relative;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 68px;
 }
 
-main > section:nth-child(4) > section:nth-child(1) > h1 {
+main > section:nth-child(4) > section:first-child > h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: initial;
+    font-size: 25px;
+    color: dodgerblue !important;
+    text-align: center;
+    padding-top: 12px;
+    margin: 0;
+}
+
+main > section:nth-child(4) > section:first-child > h1 {
     font-family: Ubuntu, sans-serif;
     font-size: 50px;
     text-align: center;
     margin-top: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 7px;
     padding-bottom: 18px;
     color: white;
 }
 
-main > section:nth-child(4) > section:nth-child(1) > h1::before {
+/**
+* title underline in skills section
+*/
+main > section:nth-child(4) > section:first-child > h1::before {
     content: "";
     position: absolute;
     display: block;
@@ -32,7 +48,7 @@ main > section:nth-child(4) > section:nth-child(1) > h1::before {
     border-radius: 2px;
 }
 
-main > section:nth-child(4) > section:nth-child(1) > h1::after {
+main > section:nth-child(4) > section:first-child > h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -41,12 +57,74 @@ main > section:nth-child(4) > section:nth-child(1) > h1::after {
     background: dodgerblue;
     bottom: 0;
     left: calc(50% - 110px);
+    /*border-radius: 3px;*/
 }
 
+/**
+* added cube shape skills section
+*/
+#skillsCube {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 115px;
+    top: 104px;
+}
+
+/**
+* added button section position skills section
+*/
 main > section:nth-child(4) > section:nth-child(3) {
     position: absolute;
     left: 172px;
     top: 179px;
+}
+
+/**
+* customized buttons size, shadow and color skills section
+*/
+main > section:nth-child(4) > section:nth-child(3) > nav:first-child > div > button {
+    width: 272px;
+    height: 99px;
+    background: #ECF0F3;
+    box-shadow: inset -23px -23px 45px #FFFFFF, inset 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+    cursor: pointer;
+    border-width: 0;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 26px;
+    color: dodgerblue;
+}
+
+/**
+* buttons wrapping and position flex type skills section
+*/
+main > section:nth-child(4) > section:nth-child(3) > nav:first-child {
+    display: flex;
+    background: #ECF0F3;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+}
+
+main > section:nth-child(4) > section:nth-child(6) {
+    /*position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 1;*/
+    display: none;
+}
+
+main > section:nth-child(4) > section:nth-child(6) > div:first-child {
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main > section:nth-child(4) > section:nth-child(6) > div:first-child > img {
+    width: 98vw;
 }
 
 main > section:nth-child(4) > div:nth-child(4) {
@@ -58,12 +136,135 @@ main > section:nth-child(4) > div:nth-child(4) {
     margin: auto;
 }
 
+#skillsDashArrowShape {
+    position: relative;
+    width: 580px;
+    height: 356px;
+    fill: none;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/**
+* circle shape position skills section
+*/
+#skillCircleShape {
+    position: absolute;
+    left: 1101px;
+    top: 413px;
+    fill: none;
+}
+
+/**
+* square shape position skills section
+*/
+#skillSquareShape {
+    position: absolute;
+    left: 941px;
+    top: 948px;
+    fill: none;
+}
+
+/**
+* rectangle shape position skills section
+*/
+#skillRectangleShape {
+    position: absolute;
+    left: 300px;
+    top: 1090px;
+    fill: none;
+}
+
+/**
+* second cube position skills section
+*/
+main > section:nth-child(4) > div:nth-child(9) {
+    position: absolute;
+    left: 98px;
+    top: 731px;
+}
+
+/**
+* third cube position skills section
+*/
+main > section:nth-child(4) > div:nth-child(10) {
+    position: absolute;
+    left: 1093px;
+    top: 1073px;
+}
+
+#skillHeadings {
+    display: flex;
+    justify-content: center;
+    gap: 232px;
+    margin-top: 40px;
+    font-family: Ubuntu, sans-serif;
+}
+
+#btnEducation {
+    color: hsl(250, 8%, 45%);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+#btnWork {
+    color: hsl(250, 8%, 45%);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+#eduIcon {
+    padding-right: 5px;
+}
+
+#workIcon {
+    padding-right: 9px;
+}
+
+#lan-heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 29px;
+}
+
+#languages {
+    color: hsl(250, 8%, 45%);
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+#lanIcon {
+    padding-right: 9px;
+}
+
+#icon-section {
+    align-items: center;
+    justify-content: center;
+    width: 79%;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+
 .slider {
-    width: 600px;
     height: 100px;
     margin: auto;
     overflow: hidden;
     position: relative;
+    width: auto;
 }
 
 .slider .slide-track {
@@ -71,7 +272,7 @@ main > section:nth-child(4) > div:nth-child(4) {
     animation-name: slider-animation;
     animation-direction: normal;
     display: flex;
-    animation-delay: 2s;
+    animation-delay: .5s;
     width: calc(100px * 14);
 }
 

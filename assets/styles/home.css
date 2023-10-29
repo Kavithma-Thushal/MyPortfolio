@@ -3,63 +3,48 @@ main > section:nth-child(1) {
     width: 100%;
 }
 
-main > section:nth-child(1) > section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-main > section:nth-child(1) > section > div {
-    width: 2000px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-    margin-top: 35px;
-    transition: all 1s;
-}
-
-main > section:nth-child(1) > section > div > aside:nth-child(1) {
+/**
+* description section
+*/
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > h3 {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h3:first-child {
     font-family: Poppins;
-    font-size: 25px;
+    font-size: 31px;
     margin-top: 0;
     margin-bottom: 0;
     color: dodgerblue;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > h1:nth-child(2) {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(2) {
     font-family: Poppins;
     font-size: 55px;
-    margin-top: 7px;
+    margin-top: 16px;
     margin-bottom: 0;
     color: dodgerblue;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > h1:nth-child(2) > span {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(2) > span {
     font-family: Poppins;
     font-size: 55px;
     color: white;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > h1:nth-child(3) {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) {
     font-family: Poppins;
-    font-size: 32px;
+    font-size: 35px;
     color: white;
-    margin-top: 7px;
-    margin-bottom: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > h1:nth-child(3) > span {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) > span {
     font-family: Poppins;
-    font-size: 32px;
+    font-size: 35px;
     color: dodgerblue;
 }
 
@@ -67,51 +52,83 @@ main > section:nth-child(1) > section > div > aside:nth-child(1) > h1:nth-child(
     display: none;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > button {
+/*
+* description section button
+*/
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4) {
     position: relative;
-    width: 180px;
-    height: 60px;
-    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    width: 206px;
+    height: 68px;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border-radius: 10px;
+    /*box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.36);*/
     font-family: 'Ubuntu', sans-serif;
     font-weight: 800;
     text-align: center;
+    /*padding-left: 25px;*/
     font-size: 25px;
     color: white;
     cursor: pointer;
     border-width: 0;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > button:hover {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4):hover {
     color: black;
     transform: scale(1.01);
     box-shadow: 0 0 15px 3px dodgerblue;
     transition: all 0.5s ease;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > section:nth-child(5) > h3 {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4) > div {
+    position: absolute;
+    top: 5px;
+    left: 141px;
+    height: 58px;
+    width: 60px;
+    border-radius: 100%;
+    background: white;
+    /*box-shadow: inset -13px -13px 16px #FFFFFF, inset 13px 13px 16px rgba(13, 39, 80, 0.16);*/
+    cursor: pointer;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4) > div:first-child > i:first-child {
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    left: 29%;
+    top: 29%;
+    bottom: 41.09%;
+    color: dodgerblue;
+    cursor: pointer;
+}
+
+/**
+* social links section
+*/
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > h3 {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     color: white;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > section:nth-child(5) > nav {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav {
     display: flex;
     gap: 15px;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > section:nth-child(5) > nav > div {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav > div {
     width: 67px;
     height: 67px;
     background: white;
+    /*box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);*/
     border-radius: 15px;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > section:nth-child(5) > nav > div:hover {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav > div:hover {
     box-shadow: 0 0 15px 3px dodgerblue;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > section:nth-child(5) > nav > div > a > i {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div > a > i {
     position: relative;
     left: 23%;
     top: 23%;
@@ -120,24 +137,84 @@ main > section:nth-child(1) > section > div > aside:nth-child(1) > section:nth-c
     cursor: pointer;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > section:nth-child(5) > nav > div:nth-child(5) > a > i {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > a > i {
     font-size: 2.00em;
     top: 29%;
     left: 32%;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(1) > section:nth-child(5) > nav > div:hover, a > i:hover {
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav > div:hover, a > i:hover {
     transition: all 0.5s ease;
     -webkit-transform: scale(1.10);
     transform: scale(1.10);
     color: dodgerblue !important;
 }
 
-main > section:nth-child(1) > section > div > aside:nth-child(2) > div {
+/**
+* first shape in home section
+*/
+main > section:first-child > section > div:first-child > div:first-child {
+    box-sizing: border-box;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    left: 138px;
+    top: 92px;
+    border: 7px solid rgba(0, 0, 255, 0.52);
+    transform: matrix(0.6, 0.8, -0.79, 0.6, 0, 0);
+}
+
+/**
+* second shape in home section
+*/
+main > section:first-child > section > div:first-child > div:nth-child(3) {
+    box-sizing: border-box;
+    border-radius: 100%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 722px;
+    top: 160px;
+    border: 6px solid rgba(0, 0, 255, 0.52);
+}
+
+/**
+* main image section in home section
+*/
+main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
     background: url(../img/home-img.png);
     width: 440px;
     height: 547px;
     background-size: cover;
     position: relative;
     bottom: 18px;
+}
+
+/**
+* dash line in home section
+*/
+main > section:first-child > section > div:first-child > div:nth-child(5) {
+    position: absolute;
+    right: 169px;
+    top: 131px;
+}
+
+main > section:first-child > section:first-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section:first-child > section:first-child > div:first-child {
+    width: 1128px;
+    display: flex;
+    gap: 66px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 35px;
+    padding-left: 35px;
+    transition: all 1s;
 }

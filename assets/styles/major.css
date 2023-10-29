@@ -5,6 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #9494A1;
+}
+
 * {
     padding: 0;
     outline: none;
@@ -19,17 +27,7 @@ main {
     width: 100%;
 }
 
-#background_video {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: -1;
-}
-
-/*======================================== Side-ScrollBar ========================================*/
+/*======================================== ScrollBar ========================================*/
 ::-webkit-scrollbar {
     display: none;
     width: 6px;
@@ -40,7 +38,7 @@ main {
     background: dodgerblue;
 }
 
-/*======================================== Scroll-UP ========================================*/
+/*Scroll-Up-Button*/
 #scroll_up_btn {
     position: fixed;
     opacity: 100%;
@@ -50,7 +48,7 @@ main {
     background: dodgerblue;
     width: 35px;
     height: 35px;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: all 0.4s;
 }
 
@@ -94,4 +92,14 @@ main {
     right: 0;
     bottom: 0;
     margin: auto;
+}
+
+#background_video {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
 }
