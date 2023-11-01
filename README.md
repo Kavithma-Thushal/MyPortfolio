@@ -7,7 +7,16 @@ narrative that evolves with my ongoing progress and new endeavors, demonstrating
 perspective in my chosen field. Enter to the world of limitless possibilities and experience the power of code in
 action.
 
-<img src="assets/img/ss.png">
+### Links
+
+🔗 <a href="https://github.com/Thushal2001/MyPortfolio" target="_blank">GitHub Project</a></br>
+🔗 <a href="https://thushal2001.github.io/MyPortfolio/" target="_blank">GitHub Page</a></br>
+🔗 <a href="https://www.gloomaps.com/icbeqVdv9a" target="_blank">Site Map</a></br>
+🔗 <a href="https://wireframe.cc/29u3zM" target="_blank">Wire Frame</a></br>
+🔗 <a href="https://www.figma.com/file/mmHVJt25CXdinNz6f48ZB5/My-Mockup?type=design&node-id=0-1&mode=design&t=geCjyFwJrOsqVFJD-0" target="_blank">
+Mock Up</a>
+
+<img src="assets/img/ss.png" alt="portfolio-image">
 
 ### Technology
 
@@ -23,15 +32,6 @@ action.
 ✅Peruse through a showcase of my assignments and successfully completed Java projects<br/>
 ✅Connect with me across various social platforms through the provided links<br/>
 ✅This is responsive, so you can browse it seamlessly on any device, from your smartphone to your desktop<br/>
-
-### Links
-
-🔗 <a href="https://github.com/Thushal2001/MyPortfolio" target="_blank">GitHub Project</a></br>
-🔗 <a href="https://thushal2001.github.io/MyPortfolio/" target="_blank">GitHub Page</a></br>
-🔗 <a href="https://www.gloomaps.com/icbeqVdv9a" target="_blank">Site Map</a></br>
-🔗 <a href="https://wireframe.cc/29u3zM" target="_blank">Wire Frame</a></br>
-🔗 <a href="https://www.figma.com/file/mmHVJt25CXdinNz6f48ZB5/My-Mockup?type=design&node-id=0-1&mode=design&t=geCjyFwJrOsqVFJD-0" target="_blank">
-Mock Up</a>
 
 ### Version
 
