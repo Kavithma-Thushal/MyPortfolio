@@ -42,38 +42,34 @@ Mock Up</a>
 ⭐© 2023 All Right Reserved Designed By Kavithma Thushal<br/>
 This project is licensed under the [MIT](LICENSE) license
 
-### Connect With Me
+## 💻 Connect With Me
 
 <p align="left">
-    <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><img
-            src="https://github.com/Thushal2001/Thushal2001/blob/main/GitHub%20Images/new/gmail.png"
-            align="center"
-            alt="Email"
-            width="40"/></a>
-    <a href="https://www.linkedin.com/in/kavithma-thushal-3b8a92260/" target="_blank"><img
-            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-            align="center"
-            alt="Linkedin"
-            width="40"/></a>
-    <a href="https://twitter.com/Thushal451" target="_blank"><img
-            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
-            align="center" alt="Twitter" width="40"/></a>
-    <a href="https://stackoverflow.com/users/21296342/kavithma-thushal?tab=profile" target="blank"><img
-            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
-            align="center" alt="StackOver Flow"
-            width="40"/></a>
-    <a href="https://www.hackerrank.com/kavithmathushal?hr_r=1" target="blank"><img
-            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg"
-            align="center" alt="HackerRank"
-            width="40"/></a>
-    <a href="https://www.sololearn.com/profile/27533547" target="blank"><img
-            src="https://github.com/Thushal2001/Thushal2001/blob/main/GitHub%20Images/new/sololearn.webp"
-            align="center"
-            alt="Sololearn" width="40"/></a>
-    <a href="https://gitlab.com/kavithmathushal9007" target="_blank"><img
-            src="https://github.com/Thushal2001/Thushal2001/blob/main/GitHub%20Images/new/gitlab.png"
-            align="center" alt="Git Lab" width="40"/></a>
-</p><br/>
+    <a href="https://www.linkedin.com/in/kavithma-thushal-3b8a92260/" target="_blank">
+    <img src="https://skillicons.dev/icons?i=linkedin" alt="Linkedin"/>
+    </a>
+    <a href="https://twitter.com/Thushal451" target="_blank">
+    <img src="https://skillicons.dev/icons?i=twitter" alt="Twitter"/>
+    </a>
+    <a href="https://github.com/Thushal2001" target="_blank">
+    <img src="https://skillicons.dev/icons?i=github" alt="Github"/>
+    </a>
+    <a href="https://stackoverflow.com/users/21296342/kavithma-thushal?tab=profile" target="blank">
+    <img src="https://skillicons.dev/icons?i=stackoverflow" alt="StackOverFlow"/>
+    </a>
+    <a href="https://gitlab.com/kavithmathushal9007" target="_blank">
+    <img src="https://skillicons.dev/icons?i=gitlab" alt="Gitlab"/>
+    </a>
+    <a href="https://www.instagram.com/" target="_blank">
+    <img src="https://skillicons.dev/icons?i=instagram" alt="Instagram"/>
+    </a>
+    <a href="https://www.hackerrank.com/kavithmathushal?hr_r=1" target="blank">
+    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" style="width: 50px; height: 50px" alt="HackerRank"/>
+    </a>
+    <a href="https://www.sololearn.com/profile/27533547" target="blank">
+    <img src="https://github.com/Thushal2001/Thushal2001/blob/main/Github/sololearn.webp" style="width: 50px; height: 50px" alt="Sololearn"/>
+    </a>
+</p>
 
 <div align="center">
 
