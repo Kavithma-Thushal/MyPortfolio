@@ -5,7 +5,7 @@ my best work, offering a comprehensive view of my capabilities and growth. It se
 my expertise, style, and potential value to prospective opportunities. It's not just a static collection but a dynamic
 narrative that evolves with my ongoing progress and new endeavors, demonstrating my dedication, creativity, and unique
 perspective in my chosen field. Enter to the world of limitless possibilities and experience the power of code in
-action
+action.
 
 ## 🛠️ Tools & Technologies
 ✅ **HTML**<br/>
