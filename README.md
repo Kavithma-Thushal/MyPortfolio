@@ -1,4 +1,4 @@
-# My-Portfolio 💫
+# 🌟 My Portfolio 🌟
 
 My Portfolio is a meticulously crafted representation of my professional journey, skills, and achievements. It showcases
 my best work, offering a comprehensive view of my capabilities and growth. It serves as a powerful tool to communicate
@@ -7,25 +7,12 @@ narrative that evolves with my ongoing progress and new endeavors, demonstrating
 perspective in my chosen field. Enter to the world of limitless possibilities and experience the power of code in
 action.
 
-### Links
+## 🛠️ Tools & Technologies
+✅ **HTML**<br/>
+✅ **CSS**<br/>
+✅ **JavaScript**<br/>
 
-🔗 <a href="https://github.com/Thushal2001/MyPortfolio" target="_blank">GitHub Project</a></br>
-🔗 <a href="https://thushal2001.github.io/MyPortfolio/" target="_blank">GitHub Page</a></br>
-🔗 <a href="https://www.gloomaps.com/icbeqVdv9a" target="_blank">Site Map</a></br>
-🔗 <a href="https://wireframe.cc/29u3zM" target="_blank">Wire Frame</a></br>
-🔗 <a href="https://www.figma.com/file/mmHVJt25CXdinNz6f48ZB5/My-Mockup?type=design&node-id=0-1&mode=design&t=geCjyFwJrOsqVFJD-0" target="_blank">
-Mock Up</a>
-
-<img src="assets/img/ss.png" alt="portfolio-image">
-
-### Technology
-
-✅HTML<br/>
-✅CSS<br/>
-✅JavaScript<br/>
-
-### Functions
-
+## 🔑 Features
 ✅Discover the full scope of who I am<br/>
 ✅Delve into a detailed overview of my skills, certifications, and professional journey<br/>
 ✅Explore my offerings, including the option to download my CV and consider me for hire<br/>
@@ -33,47 +20,71 @@ Mock Up</a>
 ✅Connect with me across various social platforms through the provided links<br/>
 ✅This is responsive, so you can browse it seamlessly on any device, from your smartphone to your desktop<br/>
 
-### Version
+## 🔗 Links
 
-1.0.0
+🔗 <a href="https://github.com/Thushal2001/MyPortfolio" target="_blank">GitHub Project</a></br>
+🔗 <a href="https://thushal2001.github.io/MyPortfolio/" target="_blank">GitHub Page</a></br>
+🔗 <a href="https://www.gloomaps.com/icbeqVdv9a" target="_blank">Site Map</a></br>
+🔗 <a href="https://wireframe.cc/29u3zM" target="_blank">Wire Frame</a></br>
+🔗 <a href="https://www.figma.com/file/mmHVJt25CXdinNz6f48ZB5/My-Mockup?type=design&node-id=0-1&mode=design&t=geCjyFwJrOsqVFJD-0" target="_blank">Mock Up</a>
 
-### License
+## 📸 Screenshots
 
-⭐© 2023 All Right Reserved Designed By Kavithma Thushal<br/>
-This project is licensed under the [MIT](LICENSE) license
+### Home
 
-## 💻 Connect With Me
+<img src="assets/img/ss/Home.png">
 
-<p align="left">
-    <a href="https://www.linkedin.com/in/kavithma-thushal-3b8a92260/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" alt="Linkedin"/>
-    </a>
-    <a href="https://twitter.com/Thushal451" target="_blank">
-    <img src="https://skillicons.dev/icons?i=twitter" alt="Twitter"/>
-    </a>
-    <a href="https://github.com/Thushal2001" target="_blank">
-    <img src="https://skillicons.dev/icons?i=github" alt="Github"/>
-    </a>
-    <a href="https://stackoverflow.com/users/21296342/kavithma-thushal?tab=profile" target="blank">
-    <img src="https://skillicons.dev/icons?i=stackoverflow" alt="StackOverFlow"/>
-    </a>
-    <a href="https://gitlab.com/kavithmathushal9007" target="_blank">
-    <img src="https://skillicons.dev/icons?i=gitlab" alt="Gitlab"/>
-    </a>
-    <a href="https://www.instagram.com/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=instagram" alt="Instagram"/>
-    </a>
-    <a href="https://www.hackerrank.com/kavithmathushal?hr_r=1" target="blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" style="width: 50px; height: 50px" alt="HackerRank"/>
-    </a>
-    <a href="https://www.sololearn.com/profile/27533547" target="blank">
-    <img src="https://github.com/Thushal2001/Thushal2001/blob/main/Github/sololearn.webp" style="width: 50px; height: 50px" alt="Sololearn"/>
-    </a>
-</p>
+### About
+
+<img src="assets/img/ss/About.png">
+
+### Skills
+
+<img src="assets/img/ss/Skills.png">
+
+### Services
+
+<img src="assets/img/ss/Services.png">
+
+### Projects
+
+<img src="assets/img/ss/Projects.png">
+
+### Assignments
+
+<img src="assets/img/ss/Assignments.png">
+
+### Applications
+
+<img src="assets/img/ss/Applications.png">
+
+### Gallery
+
+<img src="assets/img/ss/Gallery.png">
+
+### Contact
+
+<img src="assets/img/ss/Contact.png">
+<img src="assets/img/ss/Contact2.png">
+
+### Codes
+
+<img src="assets/img/ss/Codes.png">
+
+## 📝 Version
+
+Current Version : **1.0.0**
+
+## 📬 Get in Touch
+
+Got any bugs, issues, or need help understanding the code? Feel free to reach out!
+
+📧 [kavithmathushal9007@gmail.com](mailto:kavithmathushal9007@gmail.com)
 
 <div align="center">
 
-#### @2023 [Kavithma Thushal](https://github.com/Thushal2001) All Right Reserved
+#### This project is licensed under the [Apache License](LICENSE)
+
+#### © 2024 All Rights Reserved | Designed by [Kavithma Thushal](https://github.com/Kavithma-Thushal)
 
 </div>
-
